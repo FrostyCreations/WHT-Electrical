@@ -1,7 +1,6 @@
 import React, { useState, useRef, memo } from 'react';
 import { motion, useMotionValue, useSpring, useTransform } from 'framer-motion';
 import './Hero.css';
-import { heroData } from '../data/proposalData';
 
 const Hero = ({ data }) => {
   const containerRef = useRef(null);
@@ -15,10 +14,10 @@ const Hero = ({ data }) => {
   const springY = useSpring(mouseY, { stiffness: 100, damping: 30 });
 
   // Map mouse movement to subtle parallax offsets
-  const moveX = useTransform(springX, [-200, 200], [-30, 30]); // Adjusted range for mouseX
-  const moveY = useTransform(springY, [-150, 150], [-20, 20]); // Adjusted range for mouseY
-  const rotateY = useTransform(springX, [-200, 200], [-10, 10]); // Adjusted range for mouseX
-  const rotateX = useTransform(springY, [-150, 150], [10, -10]); // Adjusted range for mouseY
+  const moveX = useTransform(springX, [-500, 500], [-30, 30]); 
+  const moveY = useTransform(springY, [-300, 300], [-20, 20]); 
+  const rotateY = useTransform(springX, [-500, 500], [-10, 10]); 
+  const rotateX = useTransform(springY, [-300, 300], [10, -10]); 
 
   const handleMouseMove = (e) => {
     if (!containerRef.current) return;
