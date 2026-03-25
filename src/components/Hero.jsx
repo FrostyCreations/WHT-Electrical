@@ -9,10 +9,13 @@ const Hero = ({ data }) => {
       <div className="container">
         <div className="hero-main-card">
           <div className="hero-card-background">
-            <img 
-              src="/card-bg.png" 
-              alt="Tech Background" 
-              className="hero-card-img" 
+            <video 
+              src="/Hero Scene.mov" 
+              autoPlay 
+              loop 
+              muted 
+              playsInline 
+              className="hero-card-video"
             />
             <div className="hero-card-overlay"></div>
             
