@@ -1,11 +1,43 @@
-import { memo } from 'react';
-import { motion } from 'framer-motion';
-import { ArrowRight } from 'lucide-react';
+import React, { useState, useRef, memo } from 'react';
+import { motion, useMotionValue, useSpring, useTransform } from 'framer-motion';
 import './Hero.css';
+import { heroData } from '../data/proposalData';
 
 const Hero = ({ data }) => {
+  const containerRef = useRef(null);
+  
+  // Motion Values for mouse tracking
+  const mouseX = useMotionValue(0);
+  const mouseY = useMotionValue(0);
+
+  // Smooth springs for fluid motion
+  const springX = useSpring(mouseX, { stiffness: 100, damping: 30 });
+  const springY = useSpring(mouseY, { stiffness: 100, damping: 30 });
+
+  // Map mouse movement to subtle parallax offsets
+  const moveX = useTransform(springX, [-200, 200], [-30, 30]); // Adjusted range for mouseX
+  const moveY = useTransform(springY, [-150, 150], [-20, 20]); // Adjusted range for mouseY
+  const rotateY = useTransform(springX, [-200, 200], [-10, 10]); // Adjusted range for mouseX
+  const rotateX = useTransform(springY, [-150, 150], [10, -10]); // Adjusted range for mouseY
+
+  const handleMouseMove = (e) => {
+    if (!containerRef.current) return;
+    const rect = containerRef.current.getBoundingClientRect();
+    const x = e.clientX - rect.left;
+    const y = e.clientY - rect.top;
+    
+    // Normalize to center or specific range
+    mouseX.set(x - rect.width / 2);
+    mouseY.set(y - rect.height / 2);
+  };
+
   return (
-    <section id="home" className="hero-section card-layout">
+    <section 
+      id="home" 
+      className="hero-section card-layout"
+      onMouseMove={handleMouseMove}
+      ref={containerRef}
+    >
       <div className="container">
         <div className="hero-main-card">
           <div className="hero-card-background">
@@ -33,8 +65,15 @@ const Hero = ({ data }) => {
               src="/robot-new.png" 
               alt="AI Robot" 
               className="hero-robot-img"
+              style={{ 
+                x: moveX, 
+                y: moveY,
+                rotateY,
+                rotateX,
+                perspective: 1000
+              }}
               animate={{ 
-                y: [0, -10, 0]
+                translateY: [0, -15, 0] // Bobbing movement
               }}
               transition={{ 
                 duration: 6, 
