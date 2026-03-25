@@ -32,26 +32,6 @@ export const proposalData = {
       }
     },
     {
-      type: 'PerformanceOverview',
-      id: 'strategy',
-      data: {
-        title: "Strategy Approach",
-        metrics: [
-          {
-            "label": "Establish the brand identity, website audit, and foundational tracking.",
-            "value": "Phase 1",
-            "trend": "Foundations"
-          },
-          {
-            "label": "Expand reach via SEO, social profiles, and targeted advertising.",
-            "value": "Phase 2 & 3",
-            "trend": "Growth"
-          }
-        ],
-        imageUrl: "/tech-nodes.png"
-      }
-    },
-    {
       type: 'FeatureSection',
       id: 'phase1-header',
       data: {
@@ -173,6 +153,150 @@ export const proposalData = {
         imageUrl: "/vanilla-robot.png"
       }
     },
+    {
+      type: 'FeatureSection',
+      id: 'social-media-management',
+      data: {
+        eyebrow: "10. Social Media",
+        title: "Content & Community",
+        description: "We implement a structured social media strategy that builds awareness, educates your audience, and reinforces your expertise. Through consistent content and management, Vanilla Hub becomes more visible and relevant, helping nurture relationships with potential clients and supporting long-term brand growth.",
+        imagePosition: "right",
+        imageUrl: "/tech-nodes.png"
+      }
+    },
+    {
+      type: 'FeatureSection',
+      id: 'phase3-header',
+      data: {
+        eyebrow: "Phase 3",
+        title: "Launch & Growth",
+        description: "Aggressive lead generation and audience expansion via paid media channels and high-conversion landing pages.",
+        imagePosition: "left",
+        imageUrl: "/vanilla-robot.png"
+      }
+    },
+    {
+      type: 'FeatureSection',
+      id: 'google-ads',
+      data: {
+        eyebrow: "11. Google Ads",
+        title: "High-Intent Traffic",
+        description: "We position Vanilla Hub in front of high-intent users actively searching for payroll, HR, and financial solutions. This drives qualified traffic to your platform, generating leads from businesses already looking for services like yours, and accelerating your path to client acquisition.",
+        imagePosition: "right",
+        imageUrl: "/tech-nodes.png"
+      }
+    },
+    {
+      type: 'FeatureSection',
+      id: 'linkedin-ads',
+      data: {
+        eyebrow: "12. LinkedIn Ads",
+        title: "B2B Precision",
+        description: "We target decision-makers such as business owners, accountants, and HR professionals through LinkedIn. This allows Vanilla Hub to engage directly with a professional audience, building credibility and generating high-quality leads within your ideal market segment.",
+        imagePosition: "left",
+        imageUrl: "/vanilla-robot.png"
+      }
+    },
+    {
+      type: 'FeatureSection',
+      id: 'meta-ads',
+      data: {
+        eyebrow: "13. Meta Ads",
+        title: "Broad Awareness",
+        description: "We create targeted campaigns that introduce Vanilla Hub to a broader audience, building awareness and generating interest. This supports long-term growth by expanding your reach and ensuring your brand remains visible to potential clients earlier in their decision-making journey.",
+        imagePosition: "right",
+        imageUrl: "/tech-nodes.png"
+      }
+    },
+    {
+      type: 'FeatureSection',
+      id: 'social-landing-page',
+      data: {
+        eyebrow: "14. Social Mobile Landing Page",
+        title: "Frictionless Conversion",
+        description: "We design a focused landing page tailored to campaign traffic, ensuring users are guided towards a clear and simple action. This improves conversion rates by removing friction and aligning messaging directly with your advertising and social campaigns.",
+        imagePosition: "left",
+        imageUrl: "/vanilla-robot.png"
+      }
+    },
+    {
+      type: 'FeatureSection',
+      id: 'phase4-header',
+      data: {
+        eyebrow: "Phase 4",
+        title: "Customer Journeys",
+        description: "Building long-term value through automated lead nurturing, efficient communication, and thought leadership content.",
+        imagePosition: "right",
+        imageUrl: "/tech-nodes.png",
+        bgColor: "secondary"
+      }
+    },
+    {
+      type: 'FeatureSection',
+      id: 'mailer-funnel',
+      data: {
+        eyebrow: "15. Mailer Funnel Strategies",
+        title: "Automated Nurturing",
+        description: "We develop structured email journeys that guide prospects from initial interest through to conversion. By nurturing leads with relevant information and insights, Vanilla Hub builds stronger relationships, increases conversion rates, and maximises the value of each lead generated.",
+        imagePosition: "left",
+        imageUrl: "/vanilla-robot.png"
+      }
+    },
+    {
+      type: 'FeatureSection',
+      id: 'whatsapp-automation',
+      data: {
+        eyebrow: "16. WhatsApp Automation",
+        title: "Instant Connection",
+        description: "We implement automated WhatsApp communication to provide immediate responses and streamline client interaction. This enhances user experience, improves response times, and ensures potential clients can engage with Vanilla Hub quickly and efficiently.",
+        imagePosition: "right",
+        imageUrl: "/tech-nodes.png"
+      }
+    },
+    {
+      type: 'FeatureSection',
+      id: 'seo-blog-strategy',
+      data: {
+        eyebrow: "17. SEO & Thought Leadership Blog Strategy",
+        title: "Authoritative Content",
+        description: "We build a content strategy that positions Vanilla Hub as a trusted authority in payroll, HR, and financial solutions. By addressing real business challenges through insightful content, you attract organic traffic, build credibility, and create a long-term growth engine for the business.",
+        imagePosition: "left",
+        imageUrl: "/vanilla-robot.png"
+      }
+    },
+    {
+      type: 'AchievementsList',
+      id: 'optional',
+      data: {
+        title: "Optional Enhancements",
+        subtitle: "Additional supportive services to strengthen Vanilla Hub's market presence.",
+        badge: "Optional",
+        visualTitle: "Value Add",
+        visualText: "Extra Impact",
+        points: [
+          "Company Profile & Stationery: A professional company profile and supporting materials that clearly communicate your offering.",
+          "Additional Social Platforms: Expanding to X and TikTok where relevant for broader reach."
+        ]
+      }
+    },
+    {
+      type: 'AboutCompany',
+      id: 'about',
+      data: {
+        title: "About Big On Digital",
+        description: "<p>Big On Digital is a performance-driven marketing agency specializing in scaling tech and SaaS businesses across Southern Africa. Our mission is to bridge the gap between complex technology and the people who use it.</p><p>With a focus on data-driven growth, we build the foundations, expand your reach, and automate your customer journeys to ensure long-term success.</p>",
+        team: [
+          { name: "Digital Specialist", role: "Growth & Strategy", image: "/staff1.png" },
+          { name: "Creative Director", role: "Design & UX", image: "/staff2.png" },
+          { name: "Technical Lead", role: "Development & AI", image: "/staff3.png" }
+        ]
+      }
+    },
+    {
+      type: 'FinalCTA',
+      id: 'nextsteps',
+      data: {
+        title: "Next Steps",
         thankYou: "Review and approve the proposal phases. We will begin by executing the foundational audit and visual guide to set the stage for VanillaHub's rapid growth.",
         buttonText: "Review and Proceed"
       }
