@@ -15,10 +15,10 @@ export const proposalData = {
     "contactEmail": "hello@bigondigital.com"
   },
   hero: {
-    "badge": "VanillaHub AI",
-    "title": "Helping you get the boring stuff right.",
-    "subtitle": "Revolutionising South African payroll with automated intelligence and cloud-based compliance.",
-    "heroImageUrl": "/vanilla-robot.png"
+    "badge": "VanillaHub AI CRM",
+    "title": "Revealing the Treasures of Intelligent Growth.",
+    "subtitle": "The all-in-one AI CRM platform designed to transform your customer relationships and accelerate business growth with data-driven precision.",
+    "heroImageUrl": "/ai-robot-hero.png"
   },
   sections: [
     {
