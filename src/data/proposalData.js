@@ -39,7 +39,7 @@ export const proposalData = {
         title: "Foundations",
         description: "This phase focuses on establishing the brand and optimizing the digital infrastructure required to drive robust enquiries and ensure a consistent professional image.",
         imagePosition: "left",
-        imageUrl: "/vanilla-robot.png"
+        imageUrl: "/Visual Guide.png"
       }
     },
     {
