@@ -89,9 +89,9 @@ const QuotesPage = () => {
   };
 
   const phaseGroups = {
-    month1: ['brand-visual', 'brand-materials', 'foundational-content', 'package-design'],
-    month2: ['website-design', 'website-tracking', 'social-optimisation', 'content-planning', 'ad-setup'],
-    ongoing: ['social-content-creation', 'ad-management']
+    month1: ['brand-visual', 'competitor-analysis', 'website-audit'],
+    month2: ['seo-foundations', 'website-tracking-audit', 'video-creation', 'seo-listings', 'google-bing-listing', 'social-profiles'],
+    ongoing: ['social-media-management', 'google-ads', 'linkedin-ads', 'meta-ads', 'social-landing-page', 'mailer-funnel', 'whatsapp-automation', 'seo-blog-strategy']
   };
 
   const totals = useMemo(() => {

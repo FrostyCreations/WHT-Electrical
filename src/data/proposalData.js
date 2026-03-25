@@ -2,7 +2,6 @@
 // Easily swap out the whole 'sections' array for any new client layout
 
 import brandLaunchImg from '../assets/pexels-photo-1450360.jpeg';
-import logoImg from '../assets/PG Tour.png';
 
 export const proposalData = {
   client: {
@@ -16,7 +15,7 @@ export const proposalData = {
   },
   hero: {
     "badge": "VanillaHub AI CRM",
-    "title": "Revealing the Treasures of Intelligent Growth.",
+    "title": "Accelerating Success with Intelligent AI Systems.",
     "subtitle": "The all-in-one AI CRM platform designed to transform your customer relationships and accelerate business growth with data-driven precision.",
     "heroImageUrl": "/ai-robot-hero.png"
   },
@@ -50,7 +49,9 @@ export const proposalData = {
         title: "Creator Archetype",
         description: "We define Vanilla Hub’s brand through the lens of the Creator archetype, positioning the business as an innovator that builds intelligent, practical solutions for modern businesses. This establishes a clear visual identity, tone, and messaging framework that reflects your tech-driven approach. The outcome is a brand that feels purposeful, distinctive, and aligned to your vision of creating smarter systems for SMEs across Southern Africa.",
         imagePosition: "right",
-        imageUrl: "/Brand Archetype Wheel.png"
+        imageUrl: "/Brand Archetype Wheel.png",
+        price: "R 7,500",
+        quoteLabel: "Brand Visual Guide"
       }
     },
     {
@@ -61,7 +62,9 @@ export const proposalData = {
         title: "Uncovering Opportunities",
         description: "We analyse the competitive landscape to uncover positioning opportunities within the SaaS, ERP, and payroll space. By identifying where competitors fall short, we shape a clearer narrative around Vanilla Hub’s strengths, particularly its custom solutions, affordability, and hands-on expertise. This ensures your brand communicates a compelling reason for clients to choose you over more generic platforms.",
         imagePosition: "left",
-        imageUrl: "/vanilla-robot.png"
+        imageUrl: "/Competitor Image.png",
+        price: "R 5,000",
+        quoteLabel: "Competitor Analysis"
       }
     },
     {
@@ -72,7 +75,9 @@ export const proposalData = {
         title: "Audit & Recommendations",
         description: "We conduct a comprehensive website audit to identify gaps in structure, messaging, user experience, and conversion pathways. The outcome is a clear set of recommendations to improve performance and lead generation. This audit will be handed over for implementation within the Knack environment, or we can provide a separate quotation to assist with enhancements directly within the platform.",
         imagePosition: "right",
-        imageUrl: "/Vanilla hub Enhanced.png"
+        imageUrl: "/Vanilla hub Enhanced.png",
+        price: "R 4,500",
+        quoteLabel: "Website Enhancement Audit"
       }
     },
     {
@@ -83,7 +88,9 @@ export const proposalData = {
         title: "Search Visibility",
         description: "We establish the foundations for search visibility, ensuring Vanilla Hub can be discovered by businesses actively seeking payroll, HR, and financial solutions. As Knack has limitations from an SEO perspective, this phase includes structuring a WordPress layer or integration to support SEO efforts. This enables scalable content, improved indexing, and long-term organic growth aligned to your business goals.",
         imagePosition: "left",
-        imageUrl: "/vanilla-robot.png"
+        imageUrl: "/vanilla-robot.png",
+        price: "R 8,500",
+        quoteLabel: "SEO Foundations Set-up"
       }
     },
     {
@@ -94,7 +101,9 @@ export const proposalData = {
         title: "Data-Driven Insights",
         description: "We implement tracking systems that provide full visibility into website performance, including user behaviour, enquiries, and conversion activity. Due to platform constraints, this will include linking the Knack website with a WordPress environment or compatible tracking framework to ensure accurate data collection. The result is clear, actionable insights that support smarter marketing decisions and measurable growth.",
         imagePosition: "right",
-        imageUrl: "/tech-nodes.png"
+        imageUrl: "/tech-nodes.png",
+        price: "R 3,500",
+        quoteLabel: "Website Tracking Audit"
       }
     },
     {
@@ -105,7 +114,9 @@ export const proposalData = {
         title: "Corporate Introduction & Explainers",
         description: "We develop professional video content that communicates Vanilla Hub’s offering in a clear and engaging way. By simplifying complex solutions into compelling visual narratives, video builds trust, improves understanding, and increases conversion potential. This positions Vanilla Hub as both innovative and approachable, while strengthening credibility with prospective clients.",
         imagePosition: "left",
-        imageUrl: "/vanilla-robot.png"
+        imageUrl: "/vanilla-robot.png",
+        price: "R 12,500",
+        quoteLabel: "Video Content Creation"
       }
     },
     {
@@ -128,7 +139,9 @@ export const proposalData = {
         title: "Authority Building",
         description: "We expand Vanilla Hub’s presence across relevant directories and platforms, improving search visibility and reinforcing credibility. This creates multiple trusted touchpoints where potential clients can discover your business, strengthening your authority and increasing the likelihood of engagement.",
         imagePosition: "left",
-        imageUrl: "/vanilla-robot.png"
+        imageUrl: "/vanilla-robot.png",
+        price: "R 2,500",
+        quoteLabel: "SEO Listings & Citations"
       }
     },
     {
@@ -139,7 +152,9 @@ export const proposalData = {
         title: "Local Mastery",
         description: "We establish a verified and optimised business presence on Google and Bing, enabling Vanilla Hub to appear in local and branded searches. This enhances trust, supports credibility through reviews, and ensures your business is easily accessible to potential clients exploring your services.",
         imagePosition: "right",
-        imageUrl: "/tech-nodes.png"
+        imageUrl: "/tech-nodes.png",
+        price: "R 1,500",
+        quoteLabel: "Map Listings (Google/Bing)"
       }
     },
     {
@@ -150,7 +165,9 @@ export const proposalData = {
         title: "Meta Alignment",
         description: "We set up and optimise Meta platforms to ensure Vanilla Hub is presented professionally and consistently. This creates a strong foundation for future campaigns and content, aligning your social presence with your broader brand and business objectives.",
         imagePosition: "left",
-        imageUrl: "/vanilla-robot.png"
+        imageUrl: "/vanilla-robot.png",
+        price: "R 2,500",
+        quoteLabel: "Social Profile Setup"
       }
     },
     {
@@ -161,7 +178,9 @@ export const proposalData = {
         title: "Content & Community",
         description: "We implement a structured social media strategy that builds awareness, educates your audience, and reinforces your expertise. Through consistent content and management, Vanilla Hub becomes more visible and relevant, helping nurture relationships with potential clients and supporting long-term brand growth.",
         imagePosition: "right",
-        imageUrl: "/tech-nodes.png"
+        imageUrl: "/tech-nodes.png",
+        price: "R 6,500 /mo",
+        quoteLabel: "Social Media Management"
       }
     },
     {
@@ -183,7 +202,9 @@ export const proposalData = {
         title: "High-Intent Traffic",
         description: "We position Vanilla Hub in front of high-intent users actively searching for payroll, HR, and financial solutions. This drives qualified traffic to your platform, generating leads from businesses already looking for services like yours, and accelerating your path to client acquisition.",
         imagePosition: "right",
-        imageUrl: "/tech-nodes.png"
+        imageUrl: "/tech-nodes.png",
+        price: "R 4,500 /mo",
+        quoteLabel: "Google Ads Management"
       }
     },
     {
@@ -194,7 +215,9 @@ export const proposalData = {
         title: "B2B Precision",
         description: "We target decision-makers such as business owners, accountants, and HR professionals through LinkedIn. This allows Vanilla Hub to engage directly with a professional audience, building credibility and generating high-quality leads within your ideal market segment.",
         imagePosition: "left",
-        imageUrl: "/vanilla-robot.png"
+        imageUrl: "/vanilla-robot.png",
+        price: "R 4,500 /mo",
+        quoteLabel: "LinkedIn Ads Management"
       }
     },
     {
@@ -205,7 +228,9 @@ export const proposalData = {
         title: "Broad Awareness",
         description: "We create targeted campaigns that introduce Vanilla Hub to a broader audience, building awareness and generating interest. This supports long-term growth by expanding your reach and ensuring your brand remains visible to potential clients earlier in their decision-making journey.",
         imagePosition: "right",
-        imageUrl: "/tech-nodes.png"
+        imageUrl: "/tech-nodes.png",
+        price: "R 4,500 /mo",
+        quoteLabel: "Meta Ads Management"
       }
     },
     {
@@ -216,7 +241,9 @@ export const proposalData = {
         title: "Frictionless Conversion",
         description: "We design a focused landing page tailored to campaign traffic, ensuring users are guided towards a clear and simple action. This improves conversion rates by removing friction and aligning messaging directly with your advertising and social campaigns.",
         imagePosition: "left",
-        imageUrl: "/vanilla-robot.png"
+        imageUrl: "/vanilla-robot.png",
+        price: "R 6,500",
+        quoteLabel: "Conversion Landing Page"
       }
     },
     {
@@ -239,7 +266,9 @@ export const proposalData = {
         title: "Automated Nurturing",
         description: "We develop structured email journeys that guide prospects from initial interest through to conversion. By nurturing leads with relevant information and insights, Vanilla Hub builds stronger relationships, increases conversion rates, and maximises the value of each lead generated.",
         imagePosition: "left",
-        imageUrl: "/vanilla-robot.png"
+        imageUrl: "/vanilla-robot.png",
+        price: "R 5,500 /mo",
+        quoteLabel: "Mailer Funnels & Nurture"
       }
     },
     {
@@ -250,7 +279,9 @@ export const proposalData = {
         title: "Instant Connection",
         description: "We implement automated WhatsApp communication to provide immediate responses and streamline client interaction. This enhances user experience, improves response times, and ensures potential clients can engage with Vanilla Hub quickly and efficiently.",
         imagePosition: "right",
-        imageUrl: "/tech-nodes.png"
+        imageUrl: "/tech-nodes.png",
+        price: "R 3,500 /mo",
+        quoteLabel: "WhatsApp Business Automations"
       }
     },
     {
@@ -261,7 +292,9 @@ export const proposalData = {
         title: "Authoritative Content",
         description: "We build a content strategy that positions Vanilla Hub as a trusted authority in payroll, HR, and financial solutions. By addressing real business challenges through insightful content, you attract organic traffic, build credibility, and create a long-term growth engine for the business.",
         imagePosition: "left",
-        imageUrl: "/vanilla-robot.png"
+        imageUrl: "/vanilla-robot.png",
+        price: "R 4,500 /mo",
+        quoteLabel: "SEO & Blog Strategy"
       }
     },
     {
