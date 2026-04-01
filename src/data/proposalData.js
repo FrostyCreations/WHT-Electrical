@@ -7,7 +7,7 @@ export const proposalData = {
   client: {
     "name": "VanillaHub",
     "logoText": "VH",
-    "logoUrl": "/Vanilla hub logo.png"
+    "logoUrl": "/vanilla-hub-logo.png"
   },
   agency: {
     "name": "Big On Digital",
@@ -38,7 +38,7 @@ export const proposalData = {
         title: "Foundations",
         description: "This phase focuses on establishing the brand and optimizing the digital infrastructure required to drive robust enquiries and ensure a consistent professional image.",
         imagePosition: "left",
-        imageUrl: "/Visual Guide.png"
+        imageUrl: "/visual-guide.png"
       }
     },
     {
@@ -49,7 +49,7 @@ export const proposalData = {
         title: "Creator Archetype",
         description: "We define Vanilla Hub’s brand through the lens of the Creator archetype, positioning the business as an innovator that builds intelligent, practical solutions for modern businesses. This establishes a clear visual identity, tone, and messaging framework that reflects your tech-driven approach. The outcome is a brand that feels purposeful, distinctive, and aligned to your vision of creating smarter systems for SMEs across Southern Africa.",
         imagePosition: "right",
-        imageUrl: "/Brand Archetype Wheel.png",
+        imageUrl: "/brand-archetype-wheel.png",
         price: "R 3,995",
         quoteLabel: "Brand Visual Guide",
         quoteUrl: "https://zohosecurepay.com/books/bigondigital/secure?CEstimateID=2-34bc0b1ac6b266943facf2ae13ae9609e694cb43fa5771aff2bb10fbeaf151a39c807edabf2f9a54f0fc5ac66f7360f79265d3a24d2171e405e93abf9e4e8a3211e80a707f5b3196"
@@ -63,7 +63,7 @@ export const proposalData = {
         title: "Uncovering Opportunities",
         description: "We analyse the competitive landscape to uncover positioning opportunities within the SaaS, ERP, and payroll space. By identifying where competitors fall short, we shape a clearer narrative around Vanilla Hub’s strengths, particularly its custom solutions, affordability, and hands-on expertise. This ensures your brand communicates a compelling reason for clients to choose you over more generic platforms.",
         imagePosition: "left",
-        imageUrl: "/Competitor Image.png",
+        imageUrl: "/competitor-image.png",
         price: "R 5,500",
         quoteLabel: "Competitor Analysis",
         quoteUrl: "https://zohosecurepay.com/books/bigondigital/secure?CEstimateID=2-34bc0b1ac6b266943facf2ae13ae96097ef477067068ffb3e62fda4e4262ea43c11680bc61ee1bb5f0fc5ac66f7360f79265d3a24d2171e405e93abf9e4e8a3211e80a707f5b3196"
@@ -77,7 +77,7 @@ export const proposalData = {
         title: "Audit & Recommendations",
         description: "We conduct a comprehensive website audit to identify gaps in structure, messaging, user experience, and conversion pathways. The outcome is a clear set of recommendations to improve performance and lead generation. This audit will be handed over for implementation within the Knack environment, or we can provide a separate quotation to assist with enhancements directly within the platform.",
         imagePosition: "right",
-        imageUrl: "/Vanilla hub Enhanced.png",
+        imageUrl: "/vanilla-hub-enhanced.png",
         price: "R 4,995",
         quoteLabel: "Website Enhancement Audit",
         quoteUrl: "https://zohosecurepay.com/books/bigondigital/secure?CEstimateID=2-34bc0b1ac6b266943facf2ae13ae96099de0b67d1007a0531d86ba480a2a600002d3f0fd7ce01b53f0fc5ac66f7360f79265d3a24d2171e405e93abf9e4e8a3211e80a707f5b3196"
@@ -91,7 +91,7 @@ export const proposalData = {
         title: "Search Visibility",
         description: "We establish the foundations for search visibility, ensuring Vanilla Hub can be discovered by businesses actively seeking payroll, HR, and financial solutions. As Knack has limitations from an SEO perspective, this phase includes structuring a WordPress layer or integration to support SEO efforts. This enables scalable content, improved indexing, and long-term organic growth aligned to your business goals.",
         imagePosition: "left",
-        imageUrl: "/SEO Optimzation.png",
+        imageUrl: "/seo-optimization.png",
         price: "R 6,500",
         quoteLabel: "SEO Foundations Set-up",
         quoteUrl: "https://zohosecurepay.com/books/bigondigital/secure?CEstimateID=2-34bc0b1ac6b266943facf2ae13ae960966e3075f98fbf67241cd2542f4d21e8a1235ce4660b18378f0fc5ac66f7360f79265d3a24d2171e405e93abf9e4e8a3211e80a707f5b3196"
@@ -105,7 +105,7 @@ export const proposalData = {
         title: "Expansion",
         description: "Expanding Vanilla Hub's presence and authority through targeted listings, search optimization, and professional social media setup.",
         imagePosition: "right",
-        imageUrl: "/Phase_2.png",
+        imageUrl: "/phase-2.png",
         bgColor: "secondary"
       }
     },
@@ -117,7 +117,7 @@ export const proposalData = {
         title: "Data-Driven Insights",
         description: "We implement tracking systems that provide full visibility into website performance, including user behaviour, enquiries, and conversion activity. Due to platform constraints, this will include linking the Knack website with a WordPress environment or compatible tracking framework to ensure accurate data collection. The result is clear, actionable insights that support smarter marketing decisions and measurable growth.",
         imagePosition: "left",
-        imageUrl: "/Website_Tracking.png",
+        imageUrl: "/website-tracking.png",
         price: "R 5,500",
         quoteLabel: "Website Tracking & Analytics Setup",
         quoteUrl: "https://zohosecurepay.com/books/bigondigital/secure?CEstimateID=2-34bc0b1ac6b266943facf2ae13ae9609d0b5d6c9301858147de94fd4d92448fc2caab79599f3fb12f0fc5ac66f7360f79265d3a24d2171e405e93abf9e4e8a3211e80a707f5b3196"
@@ -131,7 +131,7 @@ export const proposalData = {
         title: "Corporate Introduction & Explainers",
         description: "We develop professional video content that communicates Vanilla Hub’s offering in a clear and engaging way. By simplifying complex solutions into compelling visual narratives, video builds trust, improves understanding, and increases conversion potential. This positions Vanilla Hub as both innovative and approachable, while strengthening credibility with prospective clients.",
         imagePosition: "right",
-        imageUrl: "/Video_creation.png",
+        imageUrl: "/video-creation.png",
         price: "R 17,985",
         quoteLabel: "Video Content Creation",
         quoteUrl: "https://zohosecurepay.com/books/bigondigital/secure?CEstimateID=2-34bc0b1ac6b266943facf2ae13ae96094b0e1d456421beeb3709cd897671405edca1e04d57496cddf0fc5ac66f7360f79265d3a24d2171e405e93abf9e4e8a3211e80a707f5b3196"
@@ -145,7 +145,7 @@ export const proposalData = {
         title: "Authority Building",
         description: "We expand Vanilla Hub’s presence across relevant directories and platforms, improving search visibility and reinforcing credibility. This creates multiple trusted touchpoints where potential clients can discover your business, strengthening your authority and increasing the likelihood of engagement.",
         imagePosition: "left",
-        imageUrl: "/Seo Listing and Citations.png",
+        imageUrl: "/seo-listings-citations.png",
         price: "R 2,995",
         quoteLabel: "SEO Listings & Citations",
         quoteUrl: "https://zohosecurepay.com/books/bigondigital/secure?CEstimateID=2-34bc0b1ac6b266943facf2ae13ae9609d5d6860c07e6a6c78b8e64fbb3d14a120afa72fb81e7454bf0fc5ac66f7360f79265d3a24d2171e405e93abf9e4e8a3211e80a707f5b3196"
@@ -159,7 +159,7 @@ export const proposalData = {
         title: "Local Mastery",
         description: "We establish a verified and optimised business presence on Google and Bing, enabling Vanilla Hub to appear in local and branded searches. This enhances trust, supports credibility through reviews, and ensures your business is easily accessible to potential clients exploring your services.",
         imagePosition: "right",
-        imageUrl: "/Google and bing Listing.png",
+        imageUrl: "/google-bing-listing.png",
         price: "R 1,990",
         quoteLabel: "Map Listings (Google/Bing)",
         quoteUrl: "https://zohosecurepay.com/books/bigondigital/secure?CEstimateID=2-34bc0b1ac6b266943facf2ae13ae9609dd88cdba433d7db9e433db300d3e425400361f09304e1675f0fc5ac66f7360f79265d3a24d2171e405e93abf9e4e8a3211e80a707f5b3196"
@@ -173,7 +173,7 @@ export const proposalData = {
         title: "Meta Alignment",
         description: "We set up and optimise Meta platforms to ensure Vanilla Hub is presented professionally and consistently. This creates a strong foundation for future campaigns and content, aligning your social presence with your broader brand and business objectives.",
         imagePosition: "left",
-        imageUrl: "/Social Profile Setup.png",
+        imageUrl: "/social-profile-setup.png",
         price: "R 995",
         quoteLabel: "Social Profile Setup",
         quoteUrl: "https://zohosecurepay.com/books/bigondigital/secure?CEstimateID=2-34bc0b1ac6b266943facf2ae13ae96097b5a11455e181deb6937b2d1191c68a2c99ca0bd9c9d2c69f0fc5ac66f7360f79265d3a24d2171e405e93abf9e4e8a3211e80a707f5b3196"
@@ -187,7 +187,7 @@ export const proposalData = {
         title: "Planning & Strategy",
         description: "A structured content calendar will guide the creation and scheduling of social media content, ensuring a consistent and purposeful online presence. This framework defines key content themes, messaging direction, and posting cadence, helping the brand communicate its value clearly while building awareness and engagement over time.",
         imagePosition: "right",
-        imageUrl: "/Social Media.jpg",
+        imageUrl: "/social-media.jpg",
         price: "R 1,995",
         quoteLabel: "Content Planning",
         quoteUrl: "https://zohosecurepay.com/books/bigondigital/secure?CEstimateID=2-34bc0b1ac6b266943facf2ae13ae96090dfa7e2ffe0a53383e3f95d87ea3a33017124eb5019b01d1f0fc5ac66f7360f79265d3a24d2171e405e93abf9e4e8a3211e80a707f5b3196"
@@ -201,7 +201,7 @@ export const proposalData = {
         title: "Content & Community",
         description: "We execute your social media presence through the creation and scheduling of content across Facebook and LinkedIn, ensuring consistent, professional communication aligned to your brand and business objectives. Each post is crafted to educate, build credibility, and keep your audience engaged. Alongside this, we actively manage community engagement by monitoring interactions, responding to comments and messages, and maintaining a responsive, trustworthy brand presence that strengthens relationships and supports ongoing growth.",
         imagePosition: "left",
-        imageUrl: "/Content & Community.png",
+        imageUrl: "/content-community.png",
         price: "R 2,567 /mo",
         quoteLabel: "Social Media Management",
         quoteUrl: "https://zohosecurepay.com/books/bigondigital/secure?CEstimateID=2-34bc0b1ac6b266943facf2ae13ae9609eb8c6afb43f106e92cb02547e57f238151cd17585d8675b9f0fc5ac66f7360f79265d3a24d2171e405e93abf9e4e8a3211e80a707f5b3196"
