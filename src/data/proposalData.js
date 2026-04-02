@@ -219,10 +219,12 @@ export const proposalData = {
         points: [
           "Company Profile & Stationery: A professional company profile and supporting materials that clearly communicate your offering.",
           "Additional Social Platforms: Expanding to TikTok, X and Instagram where relevant for broader reach.",
+          { header: "Phase 3 - Accelerated Growth" },
           "Google Ads",
           "LinkedIn Ads",
           "Meta Ads",
           "Social Mobile Landing Page",
+          { header: "Phase 4 - Customer Journeys" },
           "Mailer Funnel Strategies",
           "WhatsApp Automation",
           "SEO & Thought Leadership Blog Strategy"

@@ -57,16 +57,29 @@ const Achievements2026 = ({ data }) => {
           {/* Support for simple string array (points) */}
           {data.points && (
              <ul className="achievements-list" style={{ listStyle: 'none', padding: 0 }}>
-               {data.points.map((point, idx) => (
-                 <motion.li 
-                   key={idx} 
-                   variants={itemVariants}
-                   style={{ marginBottom: '16px' }}
-                 >
-                   <CheckCircle2 color="var(--accent-primary)" size={18} style={{ flexShrink: 0, marginTop: '4px' }} />
-                   <span>{point}</span>
-                 </motion.li>
-               ))}
+               {data.points.map((point, idx) => {
+                 if (typeof point === 'object' && point.header) {
+                   return (
+                     <motion.li 
+                       key={`header-${idx}`} 
+                       variants={itemVariants}
+                       style={{ marginBottom: '12px', marginTop: idx > 0 ? '24px' : '0' }}
+                     >
+                       <h4 style={{ margin: 0, color: 'var(--accent-primary)', fontSize: '1.1rem', fontWeight: '700' }}>{point.header}</h4>
+                     </motion.li>
+                   );
+                 }
+                 return (
+                   <motion.li 
+                     key={idx} 
+                     variants={itemVariants}
+                     style={{ marginBottom: '16px', display: 'flex', gap: '12px' }}
+                   >
+                     <CheckCircle2 color="var(--accent-primary)" size={18} style={{ flexShrink: 0, marginTop: '4px' }} />
+                     <span>{point}</span>
+                   </motion.li>
+                 );
+               })}
              </ul>
           )}
 
