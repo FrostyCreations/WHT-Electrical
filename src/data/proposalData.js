@@ -218,7 +218,7 @@ export const proposalData = {
         visualText: "Extra Impact",
         points: [
           "Company Profile & Stationery: A professional company profile and supporting materials that clearly communicate your offering.",
-          "Additional Social Platforms: Expanding to X and TikTok where relevant for broader reach.",
+          "Additional Social Platforms: Expanding to TikTok, X and Instagram where relevant for broader reach.",
           "Google Ads",
           "LinkedIn Ads",
           "Meta Ads",
