@@ -15,7 +15,7 @@ export const proposalData = {
   },
   hero: {
     "badge": "VanillaHub AI CRM",
-    "title": "Build Smarter Business Systems. <span style='font-weight: 300'>Custom Payroll, HR and financial tools.</span>",
+    "title": "Build Smarter Business Systems.<br/><span style='font-weight: 300'>Custom Payroll, HR and financial tools.</span>",
     "subtitle": "The all-in-one AI CRM platform designed to transform your customer relationships and accelerate business growth with data-driven precision.",
     "heroImageUrl": "/ai-robot-hero.png"
   },
