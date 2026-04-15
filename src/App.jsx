@@ -60,9 +60,11 @@ function App({ hideEditButton }) {
 
   const navLinks = [
     { name: 'Introduction', href: '#intro' },
-    { name: 'Phase 1', href: '#phase1-header' },
-    { name: 'Phase 2', href: '#phase2-header' },
-    { name: 'Optional', href: '#optional' },
+    { name: 'Month 1', href: '#month1-header' },
+    { name: 'Month 2', href: '#month2-header' },
+    { name: 'Month 3', href: '#month3-header' },
+    { name: 'Month 4', href: '#month4-header' },
+    { name: 'Future Phases', href: '#future-phases' },
     { name: 'About', href: '#about' }
   ]
 
@@ -80,9 +82,9 @@ function App({ hideEditButton }) {
                   width: '40px', height: '40px', borderRadius: '50%', border: '2px solid var(--accent-primary)',
                   display: 'flex', alignItems: 'center', justifyContent: 'center', fontWeight: 'bold', color: 'var(--accent-primary)', fontSize: '14px'
                 }}>
-                  {proposalData.client.logoText || 'VH'}
+                  {proposalData.client.logoText || 'WHT'}
                 </div>
-                <span style={{color: 'var(--text-primary)'}}>Hub</span>
+                <span style={{color: 'var(--text-primary)', fontWeight: 800, fontSize: '1.2rem', marginLeft: '4px'}}>Electrical</span>
               </>
             )}
           </a>
@@ -172,18 +174,18 @@ function App({ hideEditButton }) {
             alignItems: 'center',
             gap: '8px',
             padding: '12px 20px',
-            background: 'var(--accent-secondary)',
+            background: 'var(--accent-primary)',
             color: '#fff',
             borderRadius: '50px',
             fontFamily: 'var(--font-main)',
             fontWeight: 700,
             fontSize: '0.9rem',
             textDecoration: 'none',
-            boxShadow: '0 4px 20px rgba(255, 0, 0, 0.4)',
+            boxShadow: '0 4px 20px rgba(44, 70, 155, 0.4)',
             transition: 'transform 0.2s, box-shadow 0.2s',
           }}
-          onMouseEnter={e => { e.currentTarget.style.transform = 'translateY(-2px)'; e.currentTarget.style.boxShadow = '0 8px 30px rgba(255, 0, 0, 0.5)'; }}
-          onMouseLeave={e => { e.currentTarget.style.transform = ''; e.currentTarget.style.boxShadow = '0 4px 20px rgba(255, 0, 0, 0.4)'; }}
+          onMouseEnter={e => { e.currentTarget.style.transform = 'translateY(-2px)'; e.currentTarget.style.boxShadow = '0 8px 30px rgba(44, 70, 155, 0.5)'; }}
+          onMouseLeave={e => { e.currentTarget.style.transform = ''; e.currentTarget.style.boxShadow = '0 4px 20px rgba(44, 70, 155, 0.4)'; }}
         >
           <Pencil size={16} /> Edit Proposal
         </Link>

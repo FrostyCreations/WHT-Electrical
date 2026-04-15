@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;600;700;800&display=swap');
 
 :root {
   color-scheme: light;
@@ -11,17 +11,17 @@
   --text-secondary: #a0a0a0; 
   --text-muted: #666666;
   
-  --accent-primary: #7af3e2; /* Vanilla Cyan */
-  --accent-secondary: #ff0000; /* Vanilla Red */
+  --accent-primary: #2c469b; /* WHT Blue */
+  --accent-secondary: #65bc7b; /* WHT Green */
   --accent-tertiary: #ffffff;
   --accent-gradient: linear-gradient(135deg, var(--accent-primary), var(--accent-secondary));
-  --accent-glow: rgba(122, 243, 226, 0.35);
+  --accent-glow: rgba(44, 70, 155, 0.35);
 
-  --border-color: rgba(122, 243, 226, 0.2);
-  --border-highlight: rgba(255, 0, 0, 0.2);
+  --border-color: rgba(44, 70, 155, 0.2);
+  --border-highlight: rgba(101, 188, 123, 0.2);
 
   /* Typography */
-  --font-main: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  --font-main: 'Work Sans', system-ui, -apple-system, sans-serif;
   
   /* Spacing & Layout */
   --max-width: 1200px;
@@ -115,13 +115,13 @@ ul {
   border-radius: 50px;
   cursor: pointer;
   transition: var(--transition-normal);
-  box-shadow: 0 4px 15px rgba(196, 154, 69, 0.3);
+  box-shadow: 0 4px 15px rgba(44, 70, 155, 0.3);
 }
 
 .btn-primary:hover {
   transform: translateY(-2px);
   background: var(--accent-secondary);
-  box-shadow: 0 8px 25px rgba(196, 154, 69, 0.4);
+  box-shadow: 0 8px 25px rgba(101, 188, 123, 0.4);
 }
 
 .btn-secondary {

@@ -61,11 +61,6 @@ const FeatureSection = ({ data }) => {
                   <span className="pricing-label">Price:</span>
                   <span className="pricing-value">{data.price}</span>
                 </div>
-                {data.quoteUrl && (
-                  <a href={data.quoteUrl} target="_blank" rel="noopener noreferrer" className="btn-primary">
-                    View Quote
-                  </a>
-                )}
               </div>
             )}
           </motion.div>

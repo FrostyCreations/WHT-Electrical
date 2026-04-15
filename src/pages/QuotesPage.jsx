@@ -1,4 +1,4 @@
-// v1.1.1 - Triggering xneelo deployment
+// v1.2.2 - Consolidated Quotes Logic
 import React, { useMemo, useState } from 'react';
 import { useEditor } from '../context/EditorContext';
 import { Link } from 'react-router-dom';
@@ -17,12 +17,9 @@ const stripNumber = (text) => {
 
 const parsePrice = (priceStr) => {
   if (!priceStr) return 0;
-  // Extract numbers, removing currency symbol, commas and any /mo suffix
   const numericPart = priceStr.replace(/[^\d]/g, '');
   return parseInt(numericPart, 10) || 0;
 };
-
-const isLinkedSocial = (id) => id === 'social-content-creation' || id === 'social-management';
 
 const QuotesPage = () => {
   const { data: proposalData } = useEditor();
@@ -34,31 +31,35 @@ const QuotesPage = () => {
     return proposalData.sections.filter(section => section.data && section.data.price);
   }, [proposalData]);
 
-  // Track which sections are selected for the quote
-  const [selectedIds, setSelectedIds] = useState(() => {
-    return new Set(pricingSections.map(s => s.id || s.data.title || s.data.eyebrow));
-  });
+  // Track which phases are selected for the quote
+  const [selectedPhases, setSelectedPhases] = useState(new Set(['month1', 'month2', 'month3', 'month4']));
 
-  const toggleItem = (id) => {
-    const newSelected = new Set(selectedIds);
+  const togglePhase = (id) => {
+    const newSelected = new Set(selectedPhases);
     if (newSelected.has(id)) {
       newSelected.delete(id);
     } else {
       newSelected.add(id);
     }
-    setSelectedIds(newSelected);
+    setSelectedPhases(newSelected);
+  };
+
+  const phaseGroups = {
+    month1: ['website-rebuild-p1', 'brand-visual', 'instagram-setup', 'content-calendar', 'facebook-optimisation', 'gmb-optimisation', 'email-setup'],
+    month2: ['website-rebuild-p2', 'analytics-tracking', 'social-posting-m2'],
+    month3: ['website-rebuild-p3', 'seo-citations', 'social-media-m3', 'google-ads-setup'],
+    month4: ['social-media-m4', 'google-ads-m4']
   };
 
   const getApprovalText = () => {
-    return "";
+    return `WHT Electrical Proposal Approved.\n\nPhases Selected:\n${Array.from(selectedPhases).join(', ')}`;
   };
 
   const handleApprove = () => {
     const recipient = "francois.bigondigital@gmail.com";
-    const subject = `Proposal Approved: ${proposalData.client?.name || 'VanillaHub'}`;
+    const subject = `Proposal Approved: ${proposalData.client?.name || 'WHT Electrical'}`;
     const approvalText = getApprovalText();
     
-    // Attempt automatic clipboard copy
     try {
       navigator.clipboard.writeText(approvalText);
       setCopied(true);
@@ -66,7 +67,6 @@ const QuotesPage = () => {
       console.error("Failed to copy:", err);
     }
 
-    // Trigger original mailto
     const mailtoUrl = `mailto:${recipient}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(approvalText)}`;
     window.location.href = mailtoUrl;
     
@@ -82,17 +82,10 @@ const QuotesPage = () => {
 
   const openGmail = () => {
     const recipient = "francois.bigondigital@gmail.com";
-    const subject = `Proposal Approved: ${proposalData.client?.name || 'VanillaHub'}`;
+    const subject = `Proposal Approved: ${proposalData.client?.name || 'WHT Electrical'}`;
     const approvalText = getApprovalText();
     const gmailUrl = `https://mail.google.com/mail/?view=cm&fs=1&to=${recipient}&su=${encodeURIComponent(subject)}&body=${encodeURIComponent(approvalText)}`;
     window.open(gmailUrl, '_blank');
-  };
-
-  const phaseGroups = {
-    month1: ['brand-visual', 'competitor-analysis', 'website-audit', 'seo-foundations'],
-    month2: ['website-tracking-audit', 'video-creation', 'seo-listings'],
-    month3: ['google-bing-listing', 'social-profiles', 'social-media-calendar'],
-    ongoing: ['social-media-management']
   };
 
   const totals = useMemo(() => {
@@ -100,44 +93,43 @@ const QuotesPage = () => {
     let monthly = 0;
     
     const breakdown = {
-      month1: { total: 0, items: [] },
-      month2: { total: 0, items: [] },
-      month3: { total: 0, items: [] },
-      ongoing: { total: 0, items: [] }
+      month1: { total: 0, items: [], label: "Month 1: Strategy & Foundation", anchor: "month1-header" },
+      month2: { total: 0, items: [], label: "Month 2: Visibility & Tracking", anchor: "month2-header" },
+      month3: { total: 0, items: [], label: "Month 3: Lead Launch", anchor: "month3-header" },
+      month4: { total: 0, items: [], label: "Month 4 & Ongoing Momentum", anchor: "month4-header" }
     };
 
     pricingSections.forEach(section => {
       const id = section.id || section.data.title || section.data.eyebrow;
-      if (!selectedIds.has(id)) return;
-
       const priceVal = parsePrice(section.data.price);
       const isMonthly = section.data.price.toLowerCase().includes('/mo');
       const label = section.data.quoteLabel || stripNumber(section.data.eyebrow) || section.data.title;
 
-      if (isMonthly) {
-        monthly += priceVal;
-      } else {
-        oneTime += priceVal;
-      }
+      // Group into breakdown
+      let phaseId = "";
+      if (phaseGroups.month1.includes(id)) phaseId = "month1";
+      else if (phaseGroups.month2.includes(id)) phaseId = "month2";
+      else if (phaseGroups.month3.includes(id)) phaseId = "month3";
+      else if (phaseGroups.month4.includes(id)) phaseId = "month4";
 
-      // Phase breakdown
-      if (phaseGroups.month1.includes(id)) {
-        breakdown.month1.total += priceVal;
-        breakdown.month1.items.push(label);
-      } else if (phaseGroups.month2.includes(id)) {
-        breakdown.month2.total += priceVal;
-        breakdown.month2.items.push(label);
-      } else if (phaseGroups.month3.includes(id)) {
-        breakdown.month3.total += priceVal;
-        breakdown.month3.items.push(label);
-      } else if (phaseGroups.ongoing.includes(id)) {
-        breakdown.ongoing.total += priceVal;
-        breakdown.ongoing.items.push(label);
+      if (phaseId) {
+        breakdown[phaseId].total += priceVal;
+        breakdown[phaseId].items.push(label);
+        
+        // Add to global totals if the phase is selected
+        if (selectedPhases.has(phaseId)) {
+          if (isMonthly) monthly += priceVal;
+          else oneTime += priceVal;
+        }
       }
     });
 
-    return { oneTime, monthly, breakdown };
-  }, [pricingSections, selectedIds]);
+    const discount = (selectedPhases.has('month1') ? 5000 : 0) + (selectedPhases.has('month2') ? 5000 : 0) + (selectedPhases.has('month3') ? 5000 : 0);
+
+    return { oneTime, monthly, breakdown, discount };
+  }, [pricingSections, selectedPhases]);
+
+  const phasesForTable = ['month1', 'month2', 'month3', 'month4'];
 
   return (
     <div className="quotes-page">
@@ -148,7 +140,7 @@ const QuotesPage = () => {
           </Link>
           <div className="header-content">
             <h1 className="quotes-title">Investment Summary</h1>
-            <p className="quotes-subtitle">Review quotes and approve the project plan for {proposalData.client?.name || 'VanillaHub'}.</p>
+            <p className="quotes-subtitle">Review quotes and approve the project plan for {proposalData.client?.name || 'WHT Electrical'}.</p>
           </div>
         </div>
       </div>
@@ -156,154 +148,136 @@ const QuotesPage = () => {
       <div className="container quotes-container">
         <div className="quotes-grid">
           <div className="quotes-list-card glass-panel">
-            <table className="quotes-table">
+            <table className="quotes-table grouped">
               <thead>
                 <tr>
                   <th style={{ width: '50px' }}>Select</th>
-                  <th>Section</th>
-                  <th className="text-right">Investment</th>
-                  <th className="text-right">Action</th>
+                  <th>Investment Phase</th>
+                  <th className="text-right">Gross Investment</th>
                 </tr>
               </thead>
               <tbody>
-                {pricingSections.map((section, index) => {
-                  const id = section.id || section.data.title || section.data.eyebrow;
-                  const isSelected = selectedIds.has(id);
-                  const isFirstPhase2 = id === 'website-tracking-audit';
-                  const isFirstPhase3 = id === 'google-bing-listing';
-                  const isFirstPhase1 = index === 0;
+                {phasesForTable.map((phaseId) => {
+                  const phase = totals.breakdown[phaseId];
+                  const isSelected = selectedPhases.has(phaseId);
+                  
+                  if (phase.total === 0) return null;
 
                   return (
-                    <React.Fragment key={id}>
-                      {isFirstPhase1 && (
-                        <tr className="phase-header-row">
-                          <td colSpan="4">Phase 1: Foundations</td>
-                        </tr>
-                      )}
-                      {isFirstPhase2 && (
-                        <tr className="phase-header-row">
-                          <td colSpan="4">Phase 2: Expansion</td>
-                        </tr>
-                      )}
-                      {isFirstPhase3 && (
-                        <tr className="phase-header-row print-page-break">
-                          <td colSpan="4">Social Expansion</td>
-                        </tr>
-                      )}
-                      <tr className={isSelected ? '' : 'deselected'}>
+                    <tr key={phaseId} className={isSelected ? 'phase-row' : 'phase-row deselected'}>
                       <td>
                         <label className="custom-checkbox">
                           <input 
                             type="checkbox" 
                             checked={isSelected}
-                            onChange={() => toggleItem(id)} 
+                            onChange={() => togglePhase(phaseId)} 
                           />
                           <span className="checkmark"></span>
                         </label>
                       </td>
                       <td>
                         <div className="section-info">
-                          <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
-                            <span className="section-name">{section.data.quoteLabel || stripNumber(section.data.eyebrow) || section.data.title}</span>
-                          </div>
-                          {section.data.price.toLowerCase().includes('/mo') && (
-                            <span className="billing-tag">Monthly</span>
-                          )}
+                          <span className="section-name">{phase.label}</span>
+                          <ul className="phase-sub-items">
+                            {phase.items.map(item => <li key={item}>{item}</li>)}
+                          </ul>
                         </div>
                       </td>
                       <td className="text-right font-bold">
-                        {section.data.price}
+                        {formatCurrency(phase.total)}{phaseId === 'month4' ? ' /mo' : ''}
                       </td>
-                      <td className="text-right">
-                        <a href={section.data.quoteUrl || "#"} target="_blank" rel="noopener noreferrer" className="view-details-link">
-                          View Details
-                        </a>
-                      </td>
-                      </tr>
-                    </React.Fragment>
+                    </tr>
                   );
                 })}
               </tbody>
             </table>
-
-            {pricingSections.length === 0 && (
-              <div className="empty-state">
-                <p>No pricing items found in this proposal.</p>
-              </div>
-            )}
           </div>
 
           <div className="quotes-summary-sidebar">
             <div className="summary-card glass-panel dark">
-              <h3 className="summary-title">Total Investment</h3>
+              <h3 className="summary-title">Your Investment Summary</h3>
               
               <div className="summary-rollout">
-                {/* Phase 1 */}
-                <div className="summary-phase">
-                  <span className="phase-label">PHASE 1: BRAND & LAUNCH</span>
-                  
-                  {totals.breakdown.month1.total > 0 && (
+                {/* Month 1 */}
+                {totals.breakdown.month1.total > 0 && selectedPhases.has('month1') && (
+                  <div className="summary-phase">
                     <div className="summary-phase-month">
                       <div className="phase-month-header">
-                        <span>Month 1 Investment</span>
+                        <span>Month 1 Investment (Gross)</span>
                         <span className="amount">{formatCurrency(totals.breakdown.month1.total)}</span>
                       </div>
-                      <ul className="phase-item-list">
-                        {totals.breakdown.month1.items.map(item => <li key={item}>{item}</li>)}
-                      </ul>
+                      <div className="phase-month-header discount">
+                        <span>Loyalty Discount Applied</span>
+                        <span className="amount">- {formatCurrency(5000)}</span>
+                      </div>
+                      <div className="phase-month-header net">
+                        <span>Month 1 Total</span>
+                        <span className="amount">{formatCurrency(totals.breakdown.month1.total - 5000)}</span>
+                      </div>
                     </div>
-                  )}
-                </div>
+                  </div>
+                )}
 
-                <div className="summary-divider"></div>
-
-                <div className="summary-phase">
-                  <span className="phase-label">PHASE 2: EXPANSION</span>
-                  
-                  {totals.breakdown.month2.total > 0 && (
+                {/* Month 2 */}
+                {totals.breakdown.month2.total > 0 && selectedPhases.has('month2') && (
+                  <div className="summary-phase">
+                    <div className="summary-divider"></div>
                     <div className="summary-phase-month">
                       <div className="phase-month-header">
-                        <span>Month 2 Investment</span>
+                        <span>Month 2 Investment (Gross)</span>
                         <span className="amount">{formatCurrency(totals.breakdown.month2.total)}</span>
                       </div>
-                      <ul className="phase-item-list">
-                        {totals.breakdown.month2.items.map(item => <li key={item}>{item}</li>)}
-                      </ul>
+                      <div className="phase-month-header discount">
+                        <span>Loyalty Discount Applied</span>
+                        <span className="amount">- {formatCurrency(5000)}</span>
+                      </div>
+                      <div className="phase-month-header net">
+                        <span>Month 2 Total</span>
+                        <span className="amount">{formatCurrency(totals.breakdown.month2.total - 5000)}</span>
+                      </div>
                     </div>
-                  )}
-                </div>
+                  </div>
+                )}
 
-                <div className="summary-divider print-page-break-container"></div>
-
-                {/* Phase 3 */}
-                <div className="summary-phase">
-                  <span className="phase-label">SOCIAL EXPANSION</span>
-                  
-                  {totals.breakdown.month3.total > 0 && (
+                {/* Month 3 */}
+                {totals.breakdown.month3.total > 0 && selectedPhases.has('month3') && (
+                  <div className="summary-phase">
+                    <div className="summary-divider"></div>
                     <div className="summary-phase-month">
                       <div className="phase-month-header">
-                        <span>Month 3 Investment</span>
+                        <span>Month 3 Investment (Gross)</span>
                         <span className="amount">{formatCurrency(totals.breakdown.month3.total)}</span>
                       </div>
-                      <ul className="phase-item-list">
-                        {totals.breakdown.month3.items.map(item => <li key={item}>{item}</li>)}
-                      </ul>
-                    </div>
-                  )}
-                  
-                  {totals.breakdown.ongoing.total > 0 && (
-                    <div className="summary-phase-month" style={{ marginTop: '1rem' }}>
-                      <div className="phase-month-header">
-                        <span>Monthly Social Media Management</span>
-                        <span className="amount">{formatCurrency(totals.breakdown.ongoing.total)} /mo</span>
+                      <div className="phase-month-header discount">
+                        <span>Loyalty Discount Applied</span>
+                        <span className="amount">- {formatCurrency(5000)}</span>
                       </div>
-                      <ul className="phase-item-list">
-                        {totals.breakdown.ongoing.items.map(item => <li key={item}>{item}</li>)}
-                      </ul>
-                      <p className="phase-terms">Subject to initial 3-month agreement, thereafter month-to-month.</p>
+                      <div className="phase-month-header net">
+                        <span>Month 3 Total</span>
+                        <span className="amount">{formatCurrency(totals.breakdown.month3.total - 5000)}</span>
+                      </div>
                     </div>
-                  )}
-                </div>
+                  </div>
+                )}
+
+                {/* Month 4 */}
+                {totals.breakdown.month4.total > 0 && selectedPhases.has('month4') && (
+                  <div className="summary-phase">
+                    <div className="summary-divider print-page-break-container"></div>
+                    <span className="phase-label">MONTHLY MOMENTUM (FROM MONTH 4)</span>
+                    <div className="summary-phase-month">
+                      <div className="phase-month-header">
+                        <span>Management Investment</span>
+                        <span className="amount">{formatCurrency(totals.breakdown.month4.total)} /mo</span>
+                      </div>
+                      <div className="phase-month-header adspend">
+                        <span>Google Adspend (Direct)</span>
+                        <span className="amount">+ {formatCurrency(4000)} /mo</span>
+                      </div>
+                      <p className="phase-terms">Professional management and scaling of your lead generation system.</p>
+                    </div>
+                  </div>
+                )}
               </div>
 
               <div className="summary-divider"></div>
@@ -329,7 +303,7 @@ const QuotesPage = () => {
                 </div>
               ) : !showConfirm ? (
                 <button className="btn-approve-all" onClick={() => setShowConfirm(true)}>
-                  <CheckCircle2 size={20} className="mr-2" /> Approve All & Proceed
+                  <CheckCircle2 size={20} className="mr-2" /> Approve Selection
                 </button>
               ) : (
                 <div className="approval-confirm-container">

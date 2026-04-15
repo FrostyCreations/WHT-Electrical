@@ -53,7 +53,7 @@
 .team-member:hover {
   transform: translateY(-10px);
   border-color: var(--accent-primary);
-  box-shadow: 0 20px 40px rgba(122, 243, 226, 0.1);
+  box-shadow: 0 20px 40px rgba(44, 70, 155, 0.1);
 }
 
 .member-image-container {

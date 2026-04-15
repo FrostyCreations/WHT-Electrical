@@ -1,23 +1,21 @@
-// Generalized data architecture 
-// Easily swap out the whole 'sections' array for any new client layout
-
-import brandLaunchImg from '../assets/pexels-photo-1450360.jpeg';
+// WHT Electrical Proposal Data
+// v1.2.1 - Detailed Task Breakdown & Pricing
 
 export const proposalData = {
   client: {
-    "name": "VanillaHub",
-    "logoText": "VH",
-    "logoUrl": "/vanilla-hub-logo.png"
+    "name": "WHT Electrical",
+    "logoText": "WHT",
+    "logoUrl": ""
   },
   agency: {
     "name": "Big On Digital",
     "contactEmail": "hello@bigondigital.com"
   },
   hero: {
-    "badge": "VanillaHub AI CRM",
-    "title": "Build Smarter Business Systems.<br/><span style='font-weight: 300'>Custom Payroll, HR and financial tools.</span>",
-    "subtitle": "The all-in-one AI CRM platform designed to transform your customer relationships and accelerate business growth with data-driven precision.",
-    "heroImageUrl": "/ai-robot-hero.png"
+    "badge": "4-Month Strategic Rollout",
+    "title": "Establish. Activate. <br/><span style='font-weight: 300'>Generate Leads.</span>",
+    "subtitle": "A structured blueprint for WHT Electrical to dominate local search, build trust through professional branding, and scale with high-intent lead generation.",
+    "heroImageUrl": "/wht-hero.png"
   },
   sections: [
     {
@@ -25,209 +23,303 @@ export const proposalData = {
       id: 'intro',
       data: {
         title: "Introduction",
-        content: "Vanilla Hub is a next-generation platform focused on building customised business solutions that simplify operations and support growth. From tailored system development to intelligent automation, the focus is on creating tools that work the way each business operates.\n\nAlongside this, Vanilla Hub offers integrated payroll, HR, and invoicing solutions designed to navigate South African tax and labour requirements with ease. By automating complex processes, from SARS compliance (BCEA, COIDA, UIF) to financial workflows and reporting, businesses gain clarity, efficiency, and control.",
-        image1: "/tech-nodes.png",
-        image2: "/vanilla-robot.png"
+        content: "WHT Electrical is built on reliability, approachability, and trust. As we move into this 4-month digital rollout, our focus is to transition the brand from its current state into a visibility and lead-generating powerhouse.\n\nBy layering foundational branding with a high-performance website rebuild and targeted search visibility, we ensure WHT Electrical is not just visible, but the preferred choice for clients seeking electrical, plumbing, maintenance, and solar solutions in South Africa.",
+        image1: "/brand-archetype-wheel.png",
+        image2: "/wht-website.png"
       }
     },
     {
       type: 'FeatureSection',
-      id: 'phase1-header',
+      id: 'month1-header',
       data: {
-        eyebrow: "Phase 1",
-        title: "Foundations",
-        description: "This phase focuses on establishing the brand and optimizing the digital infrastructure required to drive robust enquiries and ensure a consistent professional image.",
+        eyebrow: "Month 1",
+        title: "The Foundation",
+        description: "Establishing the core brand visual identity, digital presence, and the first phase of your service-led website rebuild.",
         imagePosition: "left",
-        imageUrl: "/visual-guide.png"
+        imageUrl: "/brand-archetype-wheel.png",
+        bgColor: "secondary"
+      }
+    },
+    {
+      type: 'FeatureSection',
+      id: 'website-rebuild-p1',
+      data: {
+        eyebrow: "1. Website Development",
+        title: "Website Rebuild (Phase 1)",
+        description: "Designing the structural framework of the new WHT Electrical website. Focused on a service-led UX, we layout core pages for electrical, solar, and plumbing services.",
+        imagePosition: "right",
+        imageUrl: "/wht-website.png",
+        price: "R 3,000",
+        quoteLabel: "Website Rebuild (Phase 1)",
+        quoteUrl: "#"
       }
     },
     {
       type: 'FeatureSection',
       id: 'brand-visual',
       data: {
-        eyebrow: "1. Brand Visual Guide",
-        title: "Creator Archetype",
-        description: "We define Vanilla Hub’s brand through the lens of the Creator archetype, positioning the business as an innovator that builds intelligent, practical solutions for modern businesses. This establishes a clear visual identity, tone, and messaging framework that reflects your tech-driven approach. The outcome is a brand that feels purposeful, distinctive, and aligned to your vision of creating smarter systems for SMEs across Southern Africa.",
-        imagePosition: "right",
+        eyebrow: "2. Identity",
+        title: "Brand Visual Guide",
+        description: "Defining WHT Electrical’s archetype—reliable and built on trust. This guide ensures consistent tone, color, and messaging across all digital touchpoints.",
+        imagePosition: "left",
         imageUrl: "/brand-archetype-wheel.png",
-        price: "R 3,995",
-        quoteLabel: "Brand Visual Guide",
-        quoteUrl: "https://zohosecurepay.com/books/bigondigital/secure?CEstimateID=2-34bc0b1ac6b266943facf2ae13ae9609e694cb43fa5771aff2bb10fbeaf151a39c807edabf2f9a54f0fc5ac66f7360f79265d3a24d2171e405e93abf9e4e8a3211e80a707f5b3196"
+        price: "R 2,000",
+        quoteLabel: "Visual Guide",
+        quoteUrl: "#"
       }
     },
     {
       type: 'FeatureSection',
-      id: 'competitor-analysis',
+      id: 'instagram-setup',
       data: {
-        eyebrow: "2. Competitor Analysis",
-        title: "Uncovering Opportunities",
-        description: "We analyse the competitive landscape to uncover positioning opportunities within the SaaS, ERP, and payroll space. By identifying where competitors fall short, we shape a clearer narrative around Vanilla Hub’s strengths, particularly its custom solutions, affordability, and hands-on expertise. This ensures your brand communicates a compelling reason for clients to choose you over more generic platforms.",
-        imagePosition: "left",
-        imageUrl: "/competitor-image.png",
-        price: "R 5,500",
-        quoteLabel: "Competitor Analysis",
-        quoteUrl: "https://zohosecurepay.com/books/bigondigital/secure?CEstimateID=2-34bc0b1ac6b266943facf2ae13ae96097ef477067068ffb3e62fda4e4262ea43c11680bc61ee1bb5f0fc5ac66f7360f79265d3a24d2171e405e93abf9e4e8a3211e80a707f5b3196"
-      }
-    },
-    {
-      type: 'FeatureSection',
-      id: 'website-audit',
-      data: {
-        eyebrow: "3. Website Design Enhancement",
-        title: "Audit & Recommendations",
-        description: "We conduct a comprehensive website audit to identify gaps in structure, messaging, user experience, and conversion pathways. The outcome is a clear set of recommendations to improve performance and lead generation. This audit will be handed over for implementation within the Knack environment, or we can provide a separate quotation to assist with enhancements directly within the platform.",
+        eyebrow: "3. Social Media",
+        title: "Instagram Set Up",
+        description: "Establishing a professional Instagram profile to showcase high-quality project work and build social trust with potential clients.",
         imagePosition: "right",
-        imageUrl: "/vanilla-hub-enhanced.png",
-        price: "R 4,995",
-        quoteLabel: "Website Enhancement Audit",
-        quoteUrl: "https://zohosecurepay.com/books/bigondigital/secure?CEstimateID=2-34bc0b1ac6b266943facf2ae13ae96099de0b67d1007a0531d86ba480a2a600002d3f0fd7ce01b53f0fc5ac66f7360f79265d3a24d2171e405e93abf9e4e8a3211e80a707f5b3196"
+        imageUrl: "/social-profile-setup.png",
+        price: "R 1,000",
+        quoteLabel: "Instagram Set Up",
+        quoteUrl: "#"
       }
     },
     {
       type: 'FeatureSection',
-      id: 'seo-foundations',
+      id: 'content-calendar',
       data: {
-        eyebrow: "4. SEO Implementation",
-        title: "Search Visibility",
-        description: "We establish the foundations for search visibility, ensuring Vanilla Hub can be discovered by businesses actively seeking payroll, HR, and financial solutions. As Knack has limitations from an SEO perspective, this phase includes structuring a WordPress layer or integration to support SEO efforts. This enables scalable content, improved indexing, and long-term organic growth aligned to your business goals.",
+        eyebrow: "4. Planning",
+        title: "Content Calendar",
+        description: "Developing a strategic 30-day content calendar ensuring consistent posting that aligns with WHT Electrical’s brand messaging and lead-gen goals.",
         imagePosition: "left",
-        imageUrl: "/seo-optimization.png",
-        price: "R 6,500",
-        quoteLabel: "SEO Foundations Set-up",
-        quoteUrl: "https://zohosecurepay.com/books/bigondigital/secure?CEstimateID=2-34bc0b1ac6b266943facf2ae13ae960966e3075f98fbf67241cd2542f4d21e8a1235ce4660b18378f0fc5ac66f7360f79265d3a24d2171e405e93abf9e4e8a3211e80a707f5b3196"
+        imageUrl: "/social-media-calendar.png",
+        price: "R 1,000",
+        quoteLabel: "Content Calendar",
+        quoteUrl: "#"
       }
     },
     {
       type: 'FeatureSection',
-      id: 'phase2-header',
+      id: 'facebook-optimisation',
       data: {
-        eyebrow: "Phase 2",
-        title: "Expansion",
-        description: "Expanding Vanilla Hub's presence and authority through targeted listings, search optimization, and professional social media setup.",
+        eyebrow: "5. Channel Health",
+        title: "Facebook Page Optimisation",
+        description: "Refining the Facebook business page with updated contact info, services list, and branded cover assets to improve professionalism and searchability.",
         imagePosition: "right",
-        imageUrl: "/phase-2.png",
+        imageUrl: "/social-profiles.png",
+        price: "R 1,000",
+        quoteLabel: "Facebook Page Optimisation",
+        quoteUrl: "#"
+      }
+    },
+    {
+      type: 'FeatureSection',
+      id: 'gmb-optimisation',
+      data: {
+        eyebrow: "6. Local Search",
+        title: "Google Business Optimisation",
+        description: "Claiming and refining the Google Business Profile to ensure WHT Electrical appears prominently in local 'Near Me' searches.",
+        imagePosition: "left",
+        imageUrl: "/google-bing-listing.png",
+        price: "R 1,000",
+        quoteLabel: "Google Business Optimisation",
+        quoteUrl: "#"
+      }
+    },
+    {
+      type: 'FeatureSection',
+      id: 'email-setup',
+      data: {
+        eyebrow: "7. Professionalism",
+        title: "Email Set Up",
+        description: "Implementation of professional, domain-based email addresses (e.g., info@whtelectrical.co.za) to ensure all client communication reflects a credible business entity.",
+        imagePosition: "right",
+        imageUrl: "/email-setup.png",
+        price: "R 1,000",
+        quoteLabel: "Email Set Up",
+        quoteUrl: "#"
+      }
+    },
+    {
+      type: 'FeatureSection',
+      id: 'month2-header',
+      data: {
+        eyebrow: "Month 2",
+        title: "Visibility & Tracking",
+        description: "Advancing the website build and establishing the data pipeline to measure success.",
+        imagePosition: "left",
+        imageUrl: "/wht-analytics.png",
         bgColor: "secondary"
       }
     },
     {
       type: 'FeatureSection',
-      id: 'website-tracking-audit',
+      id: 'website-rebuild-p2',
       data: {
-        eyebrow: "5. Website Tracking",
-        title: "Data-Driven Insights",
-        description: "We implement tracking systems that provide full visibility into website performance, including user behaviour, enquiries, and conversion activity. Due to platform constraints, this will include linking the Knack website with a WordPress environment or compatible tracking framework to ensure accurate data collection. The result is clear, actionable insights that support smarter marketing decisions and measurable growth.",
-        imagePosition: "left",
-        imageUrl: "/website-tracking.png",
-        price: "R 5,500",
-        quoteLabel: "Website Tracking & Analytics Setup",
-        quoteUrl: "https://zohosecurepay.com/books/bigondigital/secure?CEstimateID=2-34bc0b1ac6b266943facf2ae13ae9609d0b5d6c9301858147de94fd4d92448fc2caab79599f3fb12f0fc5ac66f7360f79265d3a24d2171e405e93abf9e4e8a3211e80a707f5b3196"
-      }
-    },
-    {
-      type: 'FeatureSection',
-      id: 'video-creation',
-      data: {
-        eyebrow: "6. Video Creation",
-        title: "Corporate Introduction & Explainers",
-        description: "We develop professional video content that communicates Vanilla Hub’s offering in a clear and engaging way. By simplifying complex solutions into compelling visual narratives, video builds trust, improves understanding, and increases conversion potential. This positions Vanilla Hub as both innovative and approachable, while strengthening credibility with prospective clients.",
+        eyebrow: "8. Web Expansion",
+        title: "Website Rebuild (Phase 2)",
+        description: "Developing detailed service pages and integrating internal links. We focus on ensuring the technical structure supports future SEO success.",
         imagePosition: "right",
-        imageUrl: "/video-creation.png",
-        price: "R 17,985",
-        quoteLabel: "Video Content Creation",
-        quoteUrl: "https://zohosecurepay.com/books/bigondigital/secure?CEstimateID=2-34bc0b1ac6b266943facf2ae13ae96094b0e1d456421beeb3709cd897671405edca1e04d57496cddf0fc5ac66f7360f79265d3a24d2171e405e93abf9e4e8a3211e80a707f5b3196"
+        imageUrl: "/wht-website.png",
+        price: "R 5,000",
+        quoteLabel: "Website Rebuild (Phase 2)",
+        quoteUrl: "#"
       }
     },
     {
       type: 'FeatureSection',
-      id: 'seo-listings',
+      id: 'analytics-tracking',
       data: {
-        eyebrow: "7. SEO Listings and Citations",
-        title: "Authority Building",
-        description: "We expand Vanilla Hub’s presence across relevant directories and platforms, improving search visibility and reinforcing credibility. This creates multiple trusted touchpoints where potential clients can discover your business, strengthening your authority and increasing the likelihood of engagement.",
+        eyebrow: "9. Data",
+        title: "Website Tracking & Looker Studio Report",
+        description: "Setting up GA4 and custom dashboards. This provides WHT Electrical with transparent, real-time reporting on where leads are coming from.",
         imagePosition: "left",
-        imageUrl: "/seo-listings-citations.png",
-        price: "R 2,995",
-        quoteLabel: "SEO Listings & Citations",
-        quoteUrl: "https://zohosecurepay.com/books/bigondigital/secure?CEstimateID=2-34bc0b1ac6b266943facf2ae13ae9609d5d6860c07e6a6c78b8e64fbb3d14a120afa72fb81e7454bf0fc5ac66f7360f79265d3a24d2171e405e93abf9e4e8a3211e80a707f5b3196"
+        imageUrl: "/wht-analytics.png",
+        price: "R 3,000",
+        quoteLabel: "Website Tracking & Looker Studio Report",
+        quoteUrl: "#"
       }
     },
     {
       type: 'FeatureSection',
-      id: 'google-bing-listing',
+      id: 'social-posting-m2',
       data: {
-        eyebrow: "8. Google Business & Bing Listing",
-        title: "Local Mastery",
-        description: "We establish a verified and optimised business presence on Google and Bing, enabling Vanilla Hub to appear in local and branded searches. This enhances trust, supports credibility through reviews, and ensures your business is easily accessible to potential clients exploring your services.",
-        imagePosition: "right",
-        imageUrl: "/google-bing-listing.png",
-        price: "R 1,990",
-        quoteLabel: "Map Listings (Google/Bing)",
-        quoteUrl: "https://zohosecurepay.com/books/bigondigital/secure?CEstimateID=2-34bc0b1ac6b266943facf2ae13ae9609dd88cdba433d7db9e433db300d3e425400361f09304e1675f0fc5ac66f7360f79265d3a24d2171e405e93abf9e4e8a3211e80a707f5b3196"
-      }
-    },
-    {
-      type: 'FeatureSection',
-      id: 'social-profiles',
-      data: {
-        eyebrow: "9. Social Profiles Setup (Meta)",
-        title: "Meta Alignment",
-        description: "We set up and optimise Meta platforms to ensure Vanilla Hub is presented professionally and consistently. This creates a strong foundation for future campaigns and content, aligning your social presence with your broader brand and business objectives.",
-        imagePosition: "left",
-        imageUrl: "/social-profile-setup.png",
-        price: "R 995",
-        quoteLabel: "Social Profile Setup",
-        quoteUrl: "https://zohosecurepay.com/books/bigondigital/secure?CEstimateID=2-34bc0b1ac6b266943facf2ae13ae96097b5a11455e181deb6937b2d1191c68a2c99ca0bd9c9d2c69f0fc5ac66f7360f79265d3a24d2171e405e93abf9e4e8a3211e80a707f5b3196"
-      }
-    },
-    {
-      type: 'FeatureSection',
-      id: 'social-media-calendar',
-      data: {
-        eyebrow: "10. Social Media (Content Calendar)",
-        title: "Planning & Strategy",
-        description: "A structured content calendar will guide the creation and scheduling of social media content, ensuring a consistent and purposeful online presence. This framework defines key content themes, messaging direction, and posting cadence, helping the brand communicate its value clearly while building awareness and engagement over time.",
+        eyebrow: "10. Visibility",
+        title: "Social Media Posting",
+        description: "Activation of the managed social media schedule across Instagram and Facebook to maintain consistent brand presence.",
         imagePosition: "right",
         imageUrl: "/social-media.jpg",
-        price: "R 1,995",
-        quoteLabel: "Content Planning",
-        quoteUrl: "https://zohosecurepay.com/books/bigondigital/secure?CEstimateID=2-34bc0b1ac6b266943facf2ae13ae96090dfa7e2ffe0a53383e3f95d87ea3a33017124eb5019b01d1f0fc5ac66f7360f79265d3a24d2171e405e93abf9e4e8a3211e80a707f5b3196"
+        price: "R 2,000",
+        quoteLabel: "Social Media Posting",
+        quoteUrl: "#"
       }
     },
     {
       type: 'FeatureSection',
-      id: 'social-media-management',
+      id: 'month3-header',
       data: {
-        eyebrow: "11. Social Media Content Creation, Scheduling & Community Management",
-        title: "Content & Community",
-        description: "We execute your social media presence through the creation and scheduling of content across Facebook and LinkedIn, ensuring consistent, professional communication aligned to your brand and business objectives. Each post is crafted to educate, build credibility, and keep your audience engaged. Alongside this, we actively manage community engagement by monitoring interactions, responding to comments and messages, and maintaining a responsive, trustworthy brand presence that strengthens relationships and supports ongoing growth.",
+        eyebrow: "Month 3",
+        title: "Activation & Launch",
+        description: "The final push for website launch and the activation of paid search lead generation.",
         imagePosition: "left",
-        imageUrl: "/content-community.png",
-        price: "R 2,567 /mo",
-        quoteLabel: "Social Media Management",
-        quoteUrl: "https://zohosecurepay.com/books/bigondigital/secure?CEstimateID=2-34bc0b1ac6b266943facf2ae13ae9609eb8c6afb43f106e92cb02547e57f238151cd17585d8675b9f0fc5ac66f7360f79265d3a24d2171e405e93abf9e4e8a3211e80a707f5b3196"
+        imageUrl: "/wht-ads.png",
+        bgColor: "secondary"
+      }
+    },
+    {
+      type: 'FeatureSection',
+      id: 'website-rebuild-p3',
+      data: {
+        eyebrow: "11. Web Launch",
+        title: "Website Rebuild (Phase 3)",
+        description: "Final quality assurance, performance testing, and full launch of the WHT Electrical service-led website.",
+        imagePosition: "right",
+        imageUrl: "/wht-website.png",
+        price: "R 4,000",
+        quoteLabel: "Website Rebuild (Phase 3)",
+        quoteUrl: "#"
+      }
+    },
+    {
+      type: 'FeatureSection',
+      id: 'seo-citations',
+      data: {
+        eyebrow: "12. Search Authority",
+        title: "SEO Citations",
+        description: "Building authoritative local business listings and citations to strengthen Google ranking for competitive electrical search terms.",
+        imagePosition: "left",
+        imageUrl: "/seo-listings-citations.png",
+        price: "R 2,000",
+        quoteLabel: "SEO Citations",
+        quoteUrl: "#"
+      }
+    },
+    {
+      type: 'FeatureSection',
+      id: 'social-media-m3',
+      data: {
+        eyebrow: "13. Engagement",
+        title: "Social Media",
+        description: "Ongoing management of social profiles, responding to enquiries, and maintaining the content momentum established in Month 2.",
+        imagePosition: "right",
+        imageUrl: "/social-media.jpg",
+        price: "R 2,000",
+        quoteLabel: "Social Media",
+        quoteUrl: "#"
+      }
+    },
+    {
+      type: 'FeatureSection',
+      id: 'google-ads-setup',
+      data: {
+        eyebrow: "14. Lead Gen",
+        title: "Google Ads Set Up",
+        description: "Configuring and launching high-intent Search campaigns targeting users actively looking for electrical services in your service areas.",
+        imagePosition: "left",
+        imageUrl: "/wht-ads.png",
+        price: "R 2,000",
+        quoteLabel: "Google Ads Set Up",
+        quoteUrl: "#"
+      }
+    },
+    {
+      type: 'FeatureSection',
+      id: 'month4-header',
+      data: {
+        eyebrow: "Month 4",
+        title: "Ongoing Momentum",
+        description: "Transitioning into sustained growth through managed lead generation and consistent brand visibility.",
+        imagePosition: "left",
+        imageUrl: "/wht-analytics.png",
+        bgColor: "secondary"
+      }
+    },
+    {
+      type: 'FeatureSection',
+      id: 'social-media-m4',
+      data: {
+        eyebrow: "15. Management",
+        title: "Social Media",
+        description: "Full management of Instagram and Facebook channels, ensuring WHT Electrical remains top-of-mind for your local audience.",
+        imagePosition: "right",
+        imageUrl: "/social-media.jpg",
+        price: "R 3,500 /mo",
+        quoteLabel: "Social Media (Month 4+)",
+        quoteUrl: "#"
+      }
+    },
+    {
+      type: 'FeatureSection',
+      id: 'google-ads-m4',
+      data: {
+        eyebrow: "16. Performance",
+        title: "Google Ads",
+        description: "Ongoing optimisation of Google Ads to drive leads. Recommended adspend for this phase is +R4,000 per month.",
+        imagePosition: "left",
+        imageUrl: "/wht-ads.png",
+        price: "R 4,000 /mo",
+        quoteLabel: "Google Ads (Month 4+)",
+        quoteUrl: "#"
       }
     },
     {
       type: 'AchievementsList',
-      id: 'optional',
+      id: 'future-phases',
       data: {
-        title: "Optional Enhancements",
-        subtitle: "Additional supportive services to strengthen Vanilla Hub's market presence.",
-        badge: "Optional",
-        visualTitle: "Value Add",
-        visualText: "Extra Impact",
+        title: "Additional Projects & Future Phases",
+        subtitle: "Expanding Your Digital Ecosystem",
+        badge: "Future Growth",
+        visualTitle: "Add-ons",
+        visualText: "Scale Ready",
         points: [
-          "Company Profile & Stationery: A professional company profile and supporting materials that clearly communicate your offering.",
-          "Additional Social Platforms: Expanding to TikTok, X and Instagram where relevant for broader reach.",
-          { header: "Phase 3 - Accelerated Growth" },
-          "Google Ads",
-          "LinkedIn Ads",
-          "Meta Ads",
-          "Social Mobile Landing Page",
-          { header: "Phase 4 - Customer Journeys" },
-          "Mailer Funnel Strategies",
-          "WhatsApp Automation",
-          "SEO & Thought Leadership Blog Strategy"
+          { header: "Future Projects (R2,000 pm value)" },
+          "Company Profile & Pitch Deck",
+          "Business Email Signature Design",
+          "Social Media Landing Page",
+          "Meta Business & Ads Setup",
+          "LinkedIn Company Page Setup",
+          "Deep-Dive Competitor Analysis",
+          "SEO Content & Blog Strategy",
+          "Mailer Funnel & CRM Integration",
+          "WhatsApp Business Automation"
         ]
       }
     },
@@ -236,46 +328,29 @@ export const proposalData = {
       id: 'about',
       data: {
         title: "About Big On Digital",
-        description: "<p>Big On Digital is a boutique digital marketing agency offering expert, end-to-end marketing services to both small businesses and large corporations. With over two decades of combined industry experience, our team specialises in social media, branding, web development, and digital strategy that help clients grow their reach and strengthen their brand presence.</p><p>We believe in the power of creativity, strategy, and innovation to transform businesses. Every project is approached with purpose and precision, combining design, technology, and storytelling to deliver meaningful results.</p><p>Our team brings a dynamic mix of talent and insight, ensuring each brand we work with receives customised, high-impact digital solutions that drive measurable success.</p><p>At Big On Digital, we don’t just build brands, we bring visions to life.</p>",
+        description: "<p>Big On Digital is a boutique digital marketing agency offering expert, end-to-end marketing services to both small businesses and large corporations. With over two decades of combined industry experience, our team specialises in social media, branding, web development, and digital strategy that help clients grow their reach and strengthen their brand presence.</p><p>We believe in the power of creativity, strategy, and innovation to transform businesses. Every project is approached with purpose and precision, combining design, technology, and storytelling to deliver meaningful results.</p><p>Our team brings a dynamic mix of talent and insight, ensuring each brand we work with receives customised, high-impact digital solutions that drive measurable success.</p>",
         team: [
           { 
             name: "Andy", 
             title: "Technical & Performance Lead", 
-            subtitle: "Development & Paid Media", 
-            description: "Andy owns the technical and performance layer of the agency. From website development to paid advertising and tracking, he ensures every campaign is built on strong systems and optimised for results.", 
+            subtitle: "Systems & Paid Media", 
+            description: "Andy leads the performance layer, from high-speed web development to optimised Google Ads campaigns, ensuring every digital asset is a tool for revenue.", 
             image: "/staff1.jpg" 
           },
           { 
             name: "Dominique", 
             title: "Founder & Strategic Director", 
-            subtitle: "Growth & Strategy", 
-            description: "Dominique defines the vision behind every project, guiding brand positioning, marketing strategy, and long-term growth. She works closely with clients to translate ambition into structured digital direction that delivers measurable results.", 
+            subtitle: "Growth & Brand Strategy", 
+            description: "Dominique shapes the high-level roadmap, ensuring WHT's positioning aligns with the 'Everyman' archetype to build lasting local trust.", 
             image: "/staff2.jpg" 
           },
           { 
             name: "Francois", 
             title: "Creative & AI Lead", 
-            subtitle: "Content, Design & Innovation", 
-            description: "Francois leads creative execution while driving the integration of AI across content and workflows. He shapes how ideas come to life, from social media and design to intelligent content systems, ensuring the brand remains both relevant and forward-thinking.", 
+            subtitle: "Visual Narrative & Innovation", 
+            description: "Francois oversees the creative output, integrating AI tools to ensure WHT's visual content is both modern and highly engaging.", 
             image: "/staff3.jpg" 
           }
-        ]
-      }
-    },
-    {
-      type: 'ClientLogos',
-      id: 'clients',
-      data: {
-        title: "Trusted By Industry Leaders",
-        logos: [
-          { name: "Cashbox Global", url: "/Logos-1.webp", website: "https://www.cashbox.global" },
-          { name: "WorkPods", url: "/Logos-2.webp", website: "https://workpods.co.za" },
-          { name: "Ferris Group", url: "/Logos-3.webp", website: "https://ferriscars.com" },
-          { name: "WeFin Car Rentals", url: "/Logos-4.webp", website: "https://wefincarrentals.co.za" },
-          { name: "Century 21 Wildlife Properties", url: "/Logos-5.webp", website: "https://www.century21wildlife.co.za" },
-          { name: "With Crypto", url: "/Logos-6.webp", website: "https://withcrypto.com" },
-          { name: "Supercar Rhino Run", url: "/Logos-7.webp", website: "https://rhinorun.co.za" },
-          { name: "Piezo", url: "/Logos-8.webp", website: "https://www.piezo-sa.co.za" }
         ]
       }
     },
@@ -284,8 +359,8 @@ export const proposalData = {
       id: 'nextsteps',
       data: {
         title: "Next Steps",
-        thankYou: "Review and approve the proposal phases. We will begin by executing the foundational audit and visual guide to set the stage for VanillaHub's rapid growth.",
-        buttonText: "Review and Proceed"
+        thankYou: "The transition to a service-led lead generation engine begins here. Review the 4-month roadmap and let's start building WHT Electrical's modern digital presence.",
+        buttonText: "Approve Proposal"
       }
     }
   ]

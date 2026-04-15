@@ -40,29 +40,26 @@ const Hero = ({ data }) => {
       <div className="container">
         <div className="hero-main-card">
           <div className="hero-card-background">
-            <video 
-              src="/Hero Scene.mov" 
-              autoPlay 
-              loop 
-              muted 
-              playsInline 
-              className="hero-card-video"
+            <img 
+              src="/wht-hero-bg.png" 
+              alt="Electrical Background" 
+              className="hero-card-img"
             />
             <div className="hero-card-overlay"></div>
             
             {/* Wavy Wave Accent inside the card */}
             <div className="hero-wave-container">
               <svg viewBox="0 0 1440 120" fill="none" xmlns="http://www.w3.org/2000/svg" className="hero-wave-svg" preserveAspectRatio="none">
-                <path d="M0 80C300 120 600 20 1000 40C1200 50 1350 80 1440 100V120H0V80Z" fill="#FFAA00" />
-                <path d="M0 100C300 140 600 40 1000 60C1200 70 1350 100 1440 120H0V100Z" fill="#FF8800" />
+                <path d="M0 80C300 120 600 20 1000 40C1200 50 1350 80 1440 100V120H0V80Z" fill="var(--accent-primary)" />
+                <path d="M0 100C300 140 600 40 1000 60C1200 70 1350 100 1440 120H0V100Z" fill="var(--accent-secondary)" />
               </svg>
             </div>
           </div>
 
           <div className="hero-robot-container">
             <motion.img 
-              src="/robot-new.png" 
-              alt="AI Robot" 
+              src="/wht-electrician.png" 
+              alt="WHT Electrician" 
               className="hero-robot-img"
               style={{ 
                 x: moveX, 
@@ -105,8 +102,8 @@ const Hero = ({ data }) => {
             marginTop: '2rem',
             padding: '1.5rem',
             borderRadius: '16px',
-            background: 'linear-gradient(90deg, rgba(255, 170, 0, 0.05) 0%, rgba(255, 170, 0, 0.1) 50%, rgba(255, 170, 0, 0.05) 100%)',
-            border: '1px solid rgba(255, 170, 0, 0.2)'
+            background: 'linear-gradient(90deg, rgba(44, 70, 155, 0.05) 0%, rgba(44, 70, 155, 0.1) 50%, rgba(44, 70, 155, 0.05) 100%)',
+            border: '1px solid var(--border-color)'
           }}
         >
           <p style={{
@@ -116,7 +113,7 @@ const Hero = ({ data }) => {
             fontWeight: '400',
             letterSpacing: '0.5px'
           }}>
-            Powered by <strong style={{ color: '#FFAA00' }}>Intelligent automation</strong> and <strong style={{ color: '#FFAA00' }}>practical business insight</strong>.
+            Powered by <strong style={{ color: 'var(--accent-primary)' }}>Expertise</strong> and <strong style={{ color: 'var(--accent-secondary)' }}>reliable service</strong>.
           </p>
         </motion.div>
 
@@ -128,9 +125,9 @@ const Hero = ({ data }) => {
           transition={{ delay: 1, duration: 0.8 }}
         >
           <p className="hero-quote">
-            "Business should not be complicated. The right systems make it simple, efficient and built to grow."
+            "Reliability and trust are the foundations of our work. We simplify complex electrical challenges with purpose and precision."
           </p>
-          <span className="quote-author">— VanillaHub</span>
+          <span className="quote-author">— WHT Electrical</span>
         </motion.div>
       </div>
     </section>
