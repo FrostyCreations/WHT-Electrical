@@ -176,7 +176,7 @@ export const proposalData = {
         description: "We implement tracking systems to provide full visibility into how users interact with your website. This includes monitoring traffic sources, behaviour, and enquiries. The outcome is clear data that allows for informed decisions, continuous improvement, and more effective marketing performance over time.",
         imagePosition: "left",
         imageUrl: "/wht_new_tracking_dashboard.png",
-        price: "R 5,000",
+        price: "R 4,500",
         quoteLabel: "Website Tracking",
         quoteUrl: "#"
       }
@@ -245,7 +245,7 @@ export const proposalData = {
         description: "We focus on consistent, high-quality social media posts designed to highlight your completed projects, showcase your expertise, and share valuable insights with your audience. This ongoing activity builds familiarity and trust, ensuring WHT Electrical stays top of mind for potential clients.",
         imagePosition: "right",
         imageUrl: "/wht_social_management.png",
-        price: "R 2,000",
+        price: "R 2,967",
         quoteLabel: "Social Media Engagement",
         quoteUrl: "#"
       }
