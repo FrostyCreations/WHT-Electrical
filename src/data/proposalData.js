@@ -231,7 +231,7 @@ export const proposalData = {
         description: "We build and optimise listings across relevant directories to strengthen your online footprint. This improves your visibility in local search results and reinforces credibility, making it easier for clients to discover and trust WHT Electrical when searching for services.",
         imagePosition: "left",
         imageUrl: "/wht_new_seo_citations.png",
-        price: "R 1,500",
+        price: "R 2,000",
         quoteLabel: "Citations (Local SEO)",
         quoteUrl: "#"
       }
@@ -319,6 +319,21 @@ export const proposalData = {
         quoteLabel: "Future Phases",
         quoteUrl: "#",
         bgColor: "primary"
+      }
+    },
+    {
+      type: 'FeatureSection',
+      id: 'seo-citations-m4',
+      data: {
+        eyebrow: "18. Search Authority",
+        title: "Citations (Local SEO)",
+        description: "Ongoing directory expansion and local search reinforcement to cement WHT Electrical as the top regional choice.",
+        imagePosition: "right",
+        imageUrl: "/wht_new_seo_citations.png",
+        price: "No Charge",
+        quoteLabel: "Citations (Local SEO)",
+        quoteUrl: "#",
+        bgColor: "secondary"
       }
     },
 
