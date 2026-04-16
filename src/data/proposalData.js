@@ -15,7 +15,7 @@ export const proposalData = {
     "badge": "4-Month Strategic Rollout",
     "title": "Establish. Activate. <br/><span style='font-weight: 300'>Generate Leads.</span>",
     "subtitle": "A structured blueprint for WHT Electrical to dominate local search, build trust through professional branding, and scale with high-intent lead generation.",
-    "heroImageUrl": "/wht_new_hero.png"
+    "heroImageUrl": "/wht-electrician.png"
   },
   sections: [
     {
