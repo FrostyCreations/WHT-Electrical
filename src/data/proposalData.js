@@ -50,7 +50,7 @@ export const proposalData = {
         imagePosition: "right",
         imageUrl: "/wht_website_phase1.png",
         price: "R 3,000",
-        quoteLabel: "Website Rebuild (Phase 1)",
+        quoteLabel: "Website Optimisation & Rebuild",
         quoteUrl: "#"
       }
     },
@@ -64,7 +64,7 @@ export const proposalData = {
         imagePosition: "left",
         imageUrl: "/brand-archetype-wheel.png",
         price: "R 3,000",
-        quoteLabel: "Visual Guide",
+        quoteLabel: "Brand Visual Guide (Everyman Archetype)",
         quoteUrl: "#"
       }
     },
@@ -78,7 +78,7 @@ export const proposalData = {
         imagePosition: "right",
         imageUrl: "/wht_new_instagram_setup.png",
         price: "R 1,000",
-        quoteLabel: "Instagram Set Up",
+        quoteLabel: "Instagram Setup",
         quoteUrl: "#"
       }
     },
@@ -106,7 +106,7 @@ export const proposalData = {
         imagePosition: "right",
         imageUrl: "/wht_social_management.png",
         price: "No Charge",
-        quoteLabel: "Facebook Page Optimisation",
+        quoteLabel: "Profile Revamp",
         quoteUrl: "#"
       }
     },
@@ -120,7 +120,7 @@ export const proposalData = {
         imagePosition: "left",
         imageUrl: "/wht_new_gmb_listing.png",
         price: "No Charge",
-        quoteLabel: "Google Business Optimisation",
+        quoteLabel: "Google Business Profile Setup",
         quoteUrl: "#"
       }
     },
@@ -133,8 +133,8 @@ export const proposalData = {
         description: "We implement a professional email structure aligned to your domain, ensuring every interaction reflects credibility and trust. This strengthens communication with clients, reinforces your brand, and supports a more professional client experience from first contact through to project completion.",
         imagePosition: "right",
         imageUrl: "/email-setup.png",
-        price: "No Charge",
-        quoteLabel: "Email Set Up",
+        price: "R 1,000",
+        quoteLabel: "Email Setup",
         quoteUrl: "#"
       }
     },
@@ -160,7 +160,7 @@ export const proposalData = {
         imagePosition: "right",
         imageUrl: "/wht_website_phase2.png",
         price: "R 3,000",
-        quoteLabel: "Website Rebuild (Phase 2)",
+        quoteLabel: "Website Optimisation & Rebuild",
         quoteUrl: "#"
       }
     },
@@ -174,7 +174,7 @@ export const proposalData = {
         imagePosition: "left",
         imageUrl: "/wht_new_tracking_dashboard.png",
         price: "R 5,000",
-        quoteLabel: "Website Tracking & Looker Studio Report",
+        quoteLabel: "Website Tracking",
         quoteUrl: "#"
       }
     },
@@ -188,7 +188,7 @@ export const proposalData = {
         imagePosition: "right",
         imageUrl: "/wht_new_social_posting.png",
         price: "R 2,967",
-        quoteLabel: "Social Media Posting",
+        quoteLabel: "Social Media Management",
         quoteUrl: "#"
       }
     },
@@ -214,7 +214,7 @@ export const proposalData = {
         imagePosition: "right",
         imageUrl: "/wht_website_phase3.png",
         price: "R 3,000",
-        quoteLabel: "Website Rebuild (Phase 3)",
+        quoteLabel: "Website Optimisation & Rebuild",
         quoteUrl: "#"
       }
     },
@@ -228,7 +228,7 @@ export const proposalData = {
         imagePosition: "left",
         imageUrl: "/wht_new_seo_citations.png",
         price: "R 1,500",
-        quoteLabel: "SEO Citations",
+        quoteLabel: "Citations (Local SEO)",
         quoteUrl: "#"
       }
     },
@@ -241,8 +241,8 @@ export const proposalData = {
         description: "We focus on consistent, high-quality social media posts designed to highlight your completed projects, showcase your expertise, and share valuable insights with your audience. This ongoing activity builds familiarity and trust, ensuring WHT Electrical stays top of mind for potential clients.",
         imagePosition: "right",
         imageUrl: "/wht_social_management.png",
-        price: "R 2,967",
-        quoteLabel: "Social Media",
+        price: "R 2,000",
+        quoteLabel: "Social Media Engagement",
         quoteUrl: "#"
       }
     },
@@ -256,7 +256,7 @@ export const proposalData = {
         imagePosition: "left",
         imageUrl: "/wht_new_google_ads.png",
         price: "R 3,000",
-        quoteLabel: "Google Ads Set Up",
+        quoteLabel: "Google Ads",
         quoteUrl: "#"
       }
     },

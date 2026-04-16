@@ -125,7 +125,10 @@ const QuotesPage = () => {
       }
     });
 
-    const discount = (selectedPhases.has('month1') ? 5000 : 0) + (selectedPhases.has('month2') ? 5000 : 0) + (selectedPhases.has('month3') ? 5000 : 0);
+    const discount = 
+      (selectedPhases.has('month1') ? breakdown.month1.total * 0.5 : 0) + 
+      (selectedPhases.has('month2') ? breakdown.month2.total * 0.5 : 0) + 
+      (selectedPhases.has('month3') ? breakdown.month3.total * 0.5 : 0);
 
     return { oneTime, monthly, breakdown, discount };
   }, [pricingSections, selectedPhases]);
@@ -208,12 +211,12 @@ const QuotesPage = () => {
                         <span className="amount">{formatCurrency(totals.breakdown.month1.total)}</span>
                       </div>
                       <div className="phase-month-header discount">
-                        <span>Loyalty Discount Applied</span>
-                        <span className="amount">- {formatCurrency(5000)}</span>
+                        <span>50% Loyalty Discount</span>
+                        <span className="amount">- {formatCurrency(totals.breakdown.month1.total * 0.5)}</span>
                       </div>
                       <div className="phase-month-header net">
                         <span>Month 1 Total</span>
-                        <span className="amount">{formatCurrency(totals.breakdown.month1.total - 5000)}</span>
+                        <span className="amount">{formatCurrency(totals.breakdown.month1.total * 0.5)}</span>
                       </div>
                     </div>
                   </div>
@@ -229,12 +232,12 @@ const QuotesPage = () => {
                         <span className="amount">{formatCurrency(totals.breakdown.month2.total)}</span>
                       </div>
                       <div className="phase-month-header discount">
-                        <span>Loyalty Discount Applied</span>
-                        <span className="amount">- {formatCurrency(5000)}</span>
+                        <span>50% Loyalty Discount</span>
+                        <span className="amount">- {formatCurrency(totals.breakdown.month2.total * 0.5)}</span>
                       </div>
                       <div className="phase-month-header net">
                         <span>Month 2 Total</span>
-                        <span className="amount">{formatCurrency(totals.breakdown.month2.total - 5000)}</span>
+                        <span className="amount">{formatCurrency(totals.breakdown.month2.total * 0.5)}</span>
                       </div>
                     </div>
                   </div>
@@ -250,12 +253,12 @@ const QuotesPage = () => {
                         <span className="amount">{formatCurrency(totals.breakdown.month3.total)}</span>
                       </div>
                       <div className="phase-month-header discount">
-                        <span>Loyalty Discount Applied</span>
-                        <span className="amount">- {formatCurrency(5000)}</span>
+                        <span>50% Loyalty Discount</span>
+                        <span className="amount">- {formatCurrency(totals.breakdown.month3.total * 0.5)}</span>
                       </div>
                       <div className="phase-month-header net">
                         <span>Month 3 Total</span>
-                        <span className="amount">{formatCurrency(totals.breakdown.month3.total - 5000)}</span>
+                        <span className="amount">{formatCurrency(totals.breakdown.month3.total * 0.5)}</span>
                       </div>
                     </div>
                   </div>
@@ -328,9 +331,9 @@ const QuotesPage = () => {
             <div className="next-steps-info">
               <h4>Next Steps After Approval:</h4>
               <ul>
-                <li>Invoice will be generated for setup fees.</li>
-                <li>Onboarding session to be scheduled.</li>
-                <li>Development of digital foundations begins.</li>
+                <li><strong>Onboarding</strong>: Standard project initiation & strategy alignment.</li>
+                <li><strong>Foundations</strong>: Deployment of brand guide and domain setup.</li>
+                <li><strong>Milestones</strong>: Regular progress updates via client portal.</li>
               </ul>
             </div>
           </div>
