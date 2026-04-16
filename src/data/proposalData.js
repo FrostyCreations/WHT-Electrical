@@ -24,7 +24,7 @@ export const proposalData = {
       data: {
         title: "Introduction",
         content: "WHT Electrical is built on reliability, approachability, and trust. As we move into this 4-month digital rollout, our focus is to transition the brand from its current state into a visibility and lead-generating powerhouse.\n\nBy layering foundational branding with a high-performance website rebuild and targeted search visibility, we ensure WHT Electrical is not just visible, but the preferred choice for clients seeking electrical, plumbing, maintenance, and solar solutions in South Africa.",
-        image1: "/wht_intro_brand.png",
+        image1: "/wht_new_brand_guide.png",
         image2: "/wht_intro_website.png"
       }
     },
@@ -36,7 +36,7 @@ export const proposalData = {
         title: "The Foundation",
         description: "Establishing the core brand visual identity, digital presence, and the first phase of your service-led website rebuild.",
         imagePosition: "left",
-        imageUrl: "/wht_month1_foundation.png",
+        imageUrl: "/wht_new_hero.png",
         bgColor: "secondary"
       }
     },
