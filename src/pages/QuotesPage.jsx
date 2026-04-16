@@ -17,6 +17,7 @@ const stripNumber = (text) => {
 
 const parsePrice = (priceStr) => {
   if (!priceStr) return 0;
+  if (priceStr.toLowerCase().includes('valued')) return 0;
   const numericPart = priceStr.replace(/[^\d]/g, '');
   return parseInt(numericPart, 10) || 0;
 };
@@ -48,7 +49,7 @@ const QuotesPage = () => {
     month1: ['website-rebuild-p1', 'brand-visual', 'instagram-setup', 'content-calendar', 'facebook-optimisation', 'gmb-optimisation', 'email-setup'],
     month2: ['website-rebuild-p2', 'analytics-tracking', 'social-posting-m2'],
     month3: ['website-rebuild-p3', 'seo-citations', 'social-media-m3', 'google-ads-setup'],
-    month4: ['social-media-m4', 'google-ads-m4']
+    month4: ['social-media-m4', 'google-ads-m4', 'future-projects-m4']
   };
 
   const getApprovalText = () => {

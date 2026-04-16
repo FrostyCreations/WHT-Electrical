@@ -63,7 +63,7 @@ export const proposalData = {
         description: "We define WHT Electrical’s brand through the Everyman archetype, positioning the business as dependable, approachable, and built on trust. This creates a clear visual identity and tone that resonates with everyday homeowners, businesses, and property managers. The result is a brand that feels relatable, reliable, and easy to choose, strengthening connection and credibility in a competitive service market.",
         imagePosition: "left",
         imageUrl: "/brand-archetype-wheel.png",
-        price: "R 2,000",
+        price: "R 3,000",
         quoteLabel: "Visual Guide",
         quoteUrl: "#"
       }
@@ -91,7 +91,7 @@ export const proposalData = {
         description: "We develop a structured content plan that ensures consistent and relevant communication. This removes uncertainty around what to post and ensures content aligns with your services and business goals. The result is a steady presence that keeps WHT Electrical visible and top of mind.",
         imagePosition: "left",
         imageUrl: "/social-media-calendar.png",
-        price: "R 1,000",
+        price: "R 2,000",
         quoteLabel: "Content Calendar",
         quoteUrl: "#"
       }
@@ -105,7 +105,7 @@ export const proposalData = {
         description: "We refine all digital profiles to ensure consistency across platforms, from messaging to visuals and service positioning. This creates a unified presence that builds trust, making it easier for potential clients to recognise and engage with WHT Electrical wherever they encounter the business.",
         imagePosition: "right",
         imageUrl: "/wht_social_management.png",
-        price: "R 1,000",
+        price: "No Charge",
         quoteLabel: "Facebook Page Optimisation",
         quoteUrl: "#"
       }
@@ -115,11 +115,11 @@ export const proposalData = {
       id: 'gmb-optimisation',
       data: {
         eyebrow: "6. Local Search",
-        title: "Google Business Profile Setup",
+        title: "Google Business Profile Optimization",
         description: "We establish and optimise your Google Business presence to improve local search visibility. This ensures WHT Electrical appears in relevant searches when clients are actively looking for services in your area, increasing direct enquiries and strengthening your position within the local market.",
         imagePosition: "left",
         imageUrl: "/wht_new_gmb_listing.png",
-        price: "R 1,000",
+        price: "No Charge",
         quoteLabel: "Google Business Optimisation",
         quoteUrl: "#"
       }
@@ -133,7 +133,7 @@ export const proposalData = {
         description: "We implement a professional email structure aligned to your domain, ensuring every interaction reflects credibility and trust. This strengthens communication with clients, reinforces your brand, and supports a more professional client experience from first contact through to project completion.",
         imagePosition: "right",
         imageUrl: "/email-setup.png",
-        price: "R 1,000",
+        price: ""No Charge",
         quoteLabel: "Email Set Up",
         quoteUrl: "#"
       }
@@ -159,7 +159,7 @@ export const proposalData = {
         description: "Developing detailed service pages and integrating internal links. We focus on ensuring the technical structure supports future SEO success.",
         imagePosition: "right",
         imageUrl: "/wht_website_phase2.png",
-        price: "R 5,000",
+        price: "R 3,000",
         quoteLabel: "Website Rebuild (Phase 2)",
         quoteUrl: "#"
       }
@@ -173,7 +173,7 @@ export const proposalData = {
         description: "We implement tracking systems to provide full visibility into how users interact with your website. This includes monitoring traffic sources, behaviour, and enquiries. The outcome is clear data that allows for informed decisions, continuous improvement, and more effective marketing performance over time.",
         imagePosition: "left",
         imageUrl: "/wht_new_tracking_dashboard.png",
-        price: "R 3,000",
+        price: "R 5,000",
         quoteLabel: "Website Tracking & Looker Studio Report",
         quoteUrl: "#"
       }
@@ -187,7 +187,7 @@ export const proposalData = {
         description: "We implement consistent social media activity designed to showcase your services, completed work, and expertise. This builds familiarity and trust over time, ensuring WHT Electrical remains visible and relevant to potential clients in your area.",
         imagePosition: "right",
         imageUrl: "/wht_new_social_posting.png",
-        price: "R 2,000",
+        price: "R 2,967",
         quoteLabel: "Social Media Posting",
         quoteUrl: "#"
       }
@@ -213,7 +213,7 @@ export const proposalData = {
         description: "Final quality assurance, performance testing, and full launch of the WHT Electrical service-led website.",
         imagePosition: "right",
         imageUrl: "/wht_website_phase3.png",
-        price: "R 4,000",
+        price: "R 3,000",
         quoteLabel: "Website Rebuild (Phase 3)",
         quoteUrl: "#"
       }
@@ -227,7 +227,7 @@ export const proposalData = {
         description: "We build and optimise listings across relevant directories to strengthen your online footprint. This improves your visibility in local search results and reinforces credibility, making it easier for clients to discover and trust WHT Electrical when searching for services.",
         imagePosition: "left",
         imageUrl: "/wht_new_seo_citations.png",
-        price: "R 2,000",
+        price: "R 1,500",
         quoteLabel: "SEO Citations",
         quoteUrl: "#"
       }
@@ -237,11 +237,11 @@ export const proposalData = {
       id: 'social-media-m3',
       data: {
         eyebrow: "13. Engagement",
-        title: "Video / Reel Creation",
-        description: "We produce short-form video content that highlights your services in an engaging and accessible way. This helps simplify your offering, increase engagement, and create stronger connections with potential clients, enhancing both visibility and trust.",
+        title: "Social Media Engagement",
+        description: "We focus on consistent, high-quality social media posts designed to highlight your completed projects, showcase your expertise, and share valuable insights with your audience. This ongoing activity builds familiarity and trust, ensuring WHT Electrical stays top of mind for potential clients.",
         imagePosition: "right",
-        imageUrl: "/wht_social_engagement.png",
-        price: "R 2,000",
+        imageUrl: "/wht_social_management.png",
+        price: "R 2,967",
         quoteLabel: "Social Media",
         quoteUrl: "#"
       }
@@ -255,7 +255,7 @@ export const proposalData = {
         description: "We position WHT Electrical in front of high-intent users actively searching for electrical and related services. This drives immediate, qualified traffic to your website, generating enquiries from clients who are ready to act and accelerating your lead generation efforts.",
         imagePosition: "left",
         imageUrl: "/wht_new_google_ads.png",
-        price: "R 2,000",
+        price: "R 3,000",
         quoteLabel: "Google Ads Set Up",
         quoteUrl: "#"
       }
@@ -301,11 +301,26 @@ export const proposalData = {
       }
     },
     {
+      type: 'FeatureSection',
+      id: 'future-projects-m4',
+      data: {
+        eyebrow: "17. Scale",
+        title: "Additional Projects & Future Phases",
+        description: "Preparation for future expansion including Company Profiles, Email Signatures, LinkedIn setup, ongoing SEO strategies, and Mailer funnel integrations.",
+        imagePosition: "right",
+        imageUrl: "/competitor-image.png",
+        price: "Valued at R 2,000 /mo",
+        quoteLabel: "Future Phases",
+        quoteUrl: "#"
+      }
+    },
+    {
       type: 'AchievementsList',
       id: 'future-phases',
       data: {
         title: "Additional Projects & Future Phases",
         subtitle: "Expanding Your Digital Ecosystem",
+
         badge: "Future Growth",
         visualTitle: "Add-ons",
         visualText: "Scale Ready",
@@ -330,26 +345,26 @@ export const proposalData = {
         title: "About Big On Digital",
         description: "<p>Big On Digital is a boutique digital marketing agency offering expert, end-to-end marketing services to both small businesses and large corporations. With over two decades of combined industry experience, our team specialises in social media, branding, web development, and digital strategy that help clients grow their reach and strengthen their brand presence.</p><p>We believe in the power of creativity, strategy, and innovation to transform businesses. Every project is approached with purpose and precision, combining design, technology, and storytelling to deliver meaningful results.</p><p>Our team brings a dynamic mix of talent and insight, ensuring each brand we work with receives customised, high-impact digital solutions that drive measurable success.</p>",
         team: [
-          { 
-            name: "Andy", 
-            title: "Technical & Performance Lead", 
-            subtitle: "Systems & Paid Media", 
-            description: "Andy leads the performance layer, from high-speed web development to optimised Google Ads campaigns, ensuring every digital asset is a tool for revenue.", 
-            image: "/staff1.jpg" 
+          {
+            name: "Andy",
+            title: "Technical & Performance Lead",
+            subtitle: "Systems & Paid Media",
+            description: "Andy leads the performance layer, from high-speed web development to optimised Google Ads campaigns, ensuring every digital asset is a tool for revenue.",
+            image: "/staff1.jpg"
           },
-          { 
-            name: "Dominique", 
-            title: "Founder & Strategic Director", 
-            subtitle: "Growth & Brand Strategy", 
-            description: "Dominique shapes the high-level roadmap, ensuring WHT's positioning aligns with the 'Everyman' archetype to build lasting local trust.", 
-            image: "/staff2.jpg" 
+          {
+            name: "Dominique",
+            title: "Founder & Strategic Director",
+            subtitle: "Growth & Brand Strategy",
+            description: "Dominique shapes the high-level roadmap, ensuring WHT's positioning aligns with the 'Everyman' archetype to build lasting local trust.",
+            image: "/staff2.jpg"
           },
-          { 
-            name: "Francois", 
-            title: "Creative & AI Lead", 
-            subtitle: "Visual Narrative & Innovation", 
-            description: "Francois oversees the creative output, integrating AI tools to ensure WHT's visual content is both modern and highly engaging.", 
-            image: "/staff3.jpg" 
+          {
+            name: "Francois",
+            title: "Creative & AI Lead",
+            subtitle: "Visual Narrative & Innovation",
+            description: "Francois oversees the creative output, integrating AI tools to ensure WHT's visual content is both modern and highly engaging.",
+            image: "/staff3.jpg"
           }
         ]
       }
