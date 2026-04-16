@@ -113,7 +113,7 @@ const Hero = ({ data }) => {
             fontWeight: '400',
             letterSpacing: '0.5px'
           }}>
-            Powered by <strong style={{ color: 'var(--accent-primary)' }}>Expertise</strong> and <strong style={{ color: 'var(--accent-secondary)' }}>reliable service</strong>.
+            Powered by <strong style={{ color: 'var(--accent-primary)' }}>Expertise</strong> and <strong style={{ color: 'var(--accent-secondary)' }}>reliability</strong>.
           </p>
         </motion.div>
 
