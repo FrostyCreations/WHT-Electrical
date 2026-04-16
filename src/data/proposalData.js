@@ -104,7 +104,7 @@ export const proposalData = {
         title: "Profile Revamp",
         description: "We refine all digital profiles to ensure consistency across platforms, from messaging to visuals and service positioning. This creates a unified presence that builds trust, making it easier for potential clients to recognise and engage with WHT Electrical wherever they encounter the business.",
         imagePosition: "right",
-        imageUrl: "/social-profiles.png",
+        imageUrl: "/wht_social_management.png",
         price: "R 1,000",
         quoteLabel: "Facebook Page Optimisation",
         quoteUrl: "#"
