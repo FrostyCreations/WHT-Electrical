@@ -58,7 +58,7 @@ const Hero = ({ data }) => {
 
           <div className="hero-robot-container">
             <motion.img 
-              src="/wht-electrician.png" 
+              src={data.heroImageUrl || "/wht-electrician.png"} 
               alt="WHT Electrician" 
               className="hero-robot-img"
               style={{ 
