@@ -308,7 +308,7 @@ export const proposalData = {
         title: "Additional Projects & Future Phases",
         description: "Preparation for future expansion including Company Profiles, Email Signatures, LinkedIn setup, ongoing SEO strategies, and Mailer funnel integrations.",
         imagePosition: "right",
-        imageUrl: "/competitor-image.png",
+        imageUrl: "/wht_intro_website.png",
         price: "Valued at R 2,000 /mo",
         quoteLabel: "Future Phases",
         quoteUrl: "#"
