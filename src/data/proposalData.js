@@ -24,8 +24,8 @@ export const proposalData = {
       data: {
         title: "Introduction",
         content: "WHT Electrical is built on reliability, approachability, and trust. As we move into this 4-month digital rollout, our focus is to transition the brand from its current state into a visibility and lead-generating powerhouse.\n\nBy layering foundational branding with a high-performance website rebuild and targeted search visibility, we ensure WHT Electrical is not just visible, but the preferred choice for clients seeking electrical, plumbing, maintenance, and solar solutions in South Africa.",
-        image1: "/brand-archetype-wheel.png",
-        image2: "/wht-website.png"
+        image1: "/wht_intro_brand.png",
+        image2: "/wht_intro_website.png"
       }
     },
     {
@@ -36,7 +36,7 @@ export const proposalData = {
         title: "The Foundation",
         description: "Establishing the core brand visual identity, digital presence, and the first phase of your service-led website rebuild.",
         imagePosition: "left",
-        imageUrl: "/brand-archetype-wheel.png",
+        imageUrl: "/wht_month1_foundation.png",
         bgColor: "secondary"
       }
     },
@@ -48,7 +48,7 @@ export const proposalData = {
         title: "Website Rebuild (Phase 1)",
         description: "Designing the structural framework of the new WHT Electrical website. Focused on a service-led UX, we layout core pages for electrical, solar, and plumbing services.",
         imagePosition: "right",
-        imageUrl: "/wht-website.png",
+        imageUrl: "/wht_website_phase1.png",
         price: "R 3,000",
         quoteLabel: "Website Rebuild (Phase 1)",
         quoteUrl: "#"
@@ -146,7 +146,7 @@ export const proposalData = {
         title: "Visibility & Tracking",
         description: "Advancing the website build and establishing the data pipeline to measure success.",
         imagePosition: "left",
-        imageUrl: "/wht-analytics.png",
+        imageUrl: "/wht_month2_visibility.png",
         bgColor: "secondary"
       }
     },
@@ -158,7 +158,7 @@ export const proposalData = {
         title: "Website Rebuild (Phase 2)",
         description: "Developing detailed service pages and integrating internal links. We focus on ensuring the technical structure supports future SEO success.",
         imagePosition: "right",
-        imageUrl: "/wht-website.png",
+        imageUrl: "/wht_website_phase2.png",
         price: "R 5,000",
         quoteLabel: "Website Rebuild (Phase 2)",
         quoteUrl: "#"
@@ -200,7 +200,7 @@ export const proposalData = {
         title: "Activation & Launch",
         description: "The final push for website launch and the activation of paid search lead generation.",
         imagePosition: "left",
-        imageUrl: "/wht-ads.png",
+        imageUrl: "/wht_month3_activation.png",
         bgColor: "secondary"
       }
     },
@@ -212,7 +212,7 @@ export const proposalData = {
         title: "Website Rebuild (Phase 3)",
         description: "Final quality assurance, performance testing, and full launch of the WHT Electrical service-led website.",
         imagePosition: "right",
-        imageUrl: "/wht-website.png",
+        imageUrl: "/wht_website_phase3.png",
         price: "R 4,000",
         quoteLabel: "Website Rebuild (Phase 3)",
         quoteUrl: "#"
@@ -240,7 +240,7 @@ export const proposalData = {
         title: "Social Media",
         description: "Ongoing management of social profiles, responding to enquiries, and maintaining the content momentum established in Month 2.",
         imagePosition: "right",
-        imageUrl: "/social-media.jpg",
+        imageUrl: "/wht_social_engagement.png",
         price: "R 2,000",
         quoteLabel: "Social Media",
         quoteUrl: "#"
@@ -268,7 +268,7 @@ export const proposalData = {
         title: "Ongoing Momentum",
         description: "Transitioning into sustained growth through managed lead generation and consistent brand visibility.",
         imagePosition: "left",
-        imageUrl: "/wht-analytics.png",
+        imageUrl: "/wht_month4_momentum.png",
         bgColor: "secondary"
       }
     },
@@ -280,7 +280,7 @@ export const proposalData = {
         title: "Social Media",
         description: "Full management of Instagram and Facebook channels, ensuring WHT Electrical remains top-of-mind for your local audience.",
         imagePosition: "right",
-        imageUrl: "/social-media.jpg",
+        imageUrl: "/wht_social_management.png",
         price: "R 3,500 /mo",
         quoteLabel: "Social Media (Month 4+)",
         quoteUrl: "#"
@@ -294,7 +294,7 @@ export const proposalData = {
         title: "Google Ads",
         description: "Ongoing optimisation of Google Ads to drive leads. Recommended adspend for this phase is +R4,000 per month.",
         imagePosition: "left",
-        imageUrl: "/wht-ads.png",
+        imageUrl: "/wht_google_ads_performance.png",
         price: "R 4,000 /mo",
         quoteLabel: "Google Ads (Month 4+)",
         quoteUrl: "#"
