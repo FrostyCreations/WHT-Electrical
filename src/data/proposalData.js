@@ -325,7 +325,7 @@ export const proposalData = {
         visualTitle: "Add-ons",
         visualText: "Scale Ready",
         points: [
-          { header: "Future Projects (R2,000 pm value)" },
+          { header: "Future Projects" },
           "Company Profile & Pitch Deck",
           "Business Email Signature Design",
           "Social Media Landing Page",
