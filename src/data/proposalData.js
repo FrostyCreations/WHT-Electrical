@@ -49,11 +49,10 @@ export const proposalData = {
         description: "We restructure the WHT Electrical website to clearly communicate core services including electrical, plumbing, maintenance, and solar. The focus is on improving user experience, simplifying navigation, and guiding visitors towards enquiry. By aligning messaging with client needs and removing friction, the website becomes a practical tool that converts interest into real, qualified leads.",
         imagePosition: "right",
         imageUrl: "/wht_website_phase1.png",
-        price: "R 3,000",
+        price: "R 4,000",
         quoteLabel: "Website Optimisation & Rebuild",
         quoteUrl: "#",
-        bgColor: "secondary",
-        hideFromProposal: true
+        bgColor: "secondary"
       }
     },
     {
@@ -165,8 +164,7 @@ export const proposalData = {
         price: "R 3,000",
         quoteLabel: "Website Optimisation & Rebuild",
         quoteUrl: "#",
-        bgColor: "secondary",
-        hideFromProposal: true
+        bgColor: "secondary"
       }
     },
     {
@@ -221,8 +219,7 @@ export const proposalData = {
         price: "R 3,000",
         quoteLabel: "Website Optimisation & Rebuild",
         quoteUrl: "#",
-        bgColor: "secondary",
-        hideFromProposal: true
+        bgColor: "secondary"
       }
     },
     {
@@ -324,37 +321,7 @@ export const proposalData = {
         bgColor: "primary"
       }
     },
-    {
-      type: 'FeatureSection',
-      id: 'website-rebuild-p4',
-      data: {
-        eyebrow: "18. Web Scaling",
-        title: "Website Optimisation & Rebuild",
-        description: "The final phase of structure optimisation, focusing on deep performance tuning and lead funnel polish.",
-        imagePosition: "right",
-        imageUrl: "/wht_website_phase3.png",
-        price: "R 3,000",
-        quoteLabel: "Website Optimisation & Rebuild (Phase 4)",
-        quoteUrl: "#",
-        bgColor: "secondary",
-        hideFromProposal: true
-      }
-    },
-    {
-      type: 'FeatureSection',
-      id: 'seo-citations-m2',
-      data: {
-        eyebrow: "19. Search Momentum",
-        title: "Citations (Month 2 of Service)",
-        description: "Ongoing directory expansion and local search reinforcement to cement WHT Electrical as the top regional choice.",
-        imagePosition: "right",
-        imageUrl: "/wht_new_seo_citations.png",
-        price: "R 1,500",
-        quoteLabel: "Citations (Month 2)",
-        quoteUrl: "#",
-        bgColor: "secondary"
-      }
-    },
+
     {
       type: 'AchievementsList',
       id: 'future-phases',
