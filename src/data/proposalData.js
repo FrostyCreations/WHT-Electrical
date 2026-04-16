@@ -36,7 +36,7 @@ export const proposalData = {
         title: "The Foundation",
         description: "Establishing the core brand visual identity, digital presence, and the first phase of your service-led website rebuild.",
         imagePosition: "left",
-        imageUrl: "/wht_new_hero.png",
+        imageUrl: "/vecteezy_a-young-male-electrician-in-his-30s-wearing-safety-gear_52155212.jpg",
         bgColor: "secondary"
       }
     },
@@ -48,7 +48,7 @@ export const proposalData = {
         title: "Website Optimisation & Rebuild",
         description: "We restructure the WHT Electrical website to clearly communicate core services including electrical, plumbing, maintenance, and solar. The focus is on improving user experience, simplifying navigation, and guiding visitors towards enquiry. By aligning messaging with client needs and removing friction, the website becomes a practical tool that converts interest into real, qualified leads.",
         imagePosition: "right",
-        imageUrl: "/wht_website_phase1.png",
+        imageUrl: "/vecteezy_ai-generated-close-up-detail-of-an-electrician-hands-working_37778927.jpg",
         price: "R 3,000",
         quoteLabel: "Website Optimisation & Rebuild",
         quoteUrl: "#"
@@ -133,7 +133,7 @@ export const proposalData = {
         description: "We implement a professional email structure aligned to your domain, ensuring every interaction reflects credibility and trust. This strengthens communication with clients, reinforces your brand, and supports a more professional client experience from first contact through to project completion.",
         imagePosition: "right",
         imageUrl: "/email-setup.png",
-        price: "R 1,000",
+        price: "No Charge",
         quoteLabel: "Email Setup",
         quoteUrl: "#"
       }
@@ -158,7 +158,7 @@ export const proposalData = {
         title: "Website Rebuild (Phase 2)",
         description: "Developing detailed service pages and integrating internal links. We focus on ensuring the technical structure supports future SEO success.",
         imagePosition: "right",
-        imageUrl: "/wht_website_phase2.png",
+        imageUrl: "/vecteezy_electrician-engineer-checking-electric-current-voltage-at_24083985.jpg",
         price: "R 3,000",
         quoteLabel: "Website Optimisation & Rebuild",
         quoteUrl: "#"
@@ -308,7 +308,7 @@ export const proposalData = {
         title: "Additional Projects & Future Phases",
         description: "Preparation for future expansion including Company Profiles, Email Signatures, LinkedIn setup, ongoing SEO strategies, and Mailer funnel integrations.",
         imagePosition: "right",
-        imageUrl: "/wht_intro_website.png",
+        imageUrl: "/vecteezy_electrician-installs-decorative-frame-on-electric-and-tv_48569747.jpg",
         price: "Valued at R 2,000 /mo",
         quoteLabel: "Future Phases",
         quoteUrl: "#"
