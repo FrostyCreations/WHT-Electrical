@@ -48,7 +48,7 @@ export const proposalData = {
         title: "Website Optimisation & Rebuild",
         description: "We restructure the WHT Electrical website to clearly communicate core services including electrical, plumbing, maintenance, and solar. The focus is on improving user experience, simplifying navigation, and guiding visitors towards enquiry. By aligning messaging with client needs and removing friction, the website becomes a practical tool that converts interest into real, qualified leads.",
         imagePosition: "right",
-        imageUrl: "/vecteezy_ai-generated-close-up-detail-of-an-electrician-hands-working_37778927.jpg",
+        imageUrl: "/wht_website_phase1.png",
         price: "R 3,000",
         quoteLabel: "Website Optimisation & Rebuild",
         quoteUrl: "#"
@@ -212,7 +212,7 @@ export const proposalData = {
         title: "Website Rebuild (Phase 3)",
         description: "Final quality assurance, performance testing, and full launch of the WHT Electrical service-led website.",
         imagePosition: "right",
-        imageUrl: "/wht_website_phase3.png",
+        imageUrl: "/vecteezy_ai-generated-close-up-detail-of-an-electrician-hands-working_37778927.jpg",
         price: "R 3,000",
         quoteLabel: "Website Optimisation & Rebuild",
         quoteUrl: "#"
