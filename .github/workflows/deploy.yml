@@ -31,6 +31,6 @@ jobs:
         username: ${{ secrets.FTP_USERNAME }}
         password: ${{ secrets.FTP_PASSWORD }}
         local-dir: ./dist/
-        server-dir: ./vanillahub.bigondigital.online/
+        server-dir: ./whtelectrical.bigondigital.online/
         # Use state-name to track sync efficiently
         state-name: .ftp-deploy-sync-state.json
