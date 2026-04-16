@@ -37,7 +37,7 @@ export const proposalData = {
         description: "Establishing the core brand visual identity, digital presence, and the first phase of your service-led website rebuild.",
         imagePosition: "left",
         imageUrl: "/vecteezy_a-young-male-electrician-in-his-30s-wearing-safety-gear_52155212.jpg",
-        bgColor: "secondary"
+        bgColor: "primary"
       }
     },
     {
@@ -51,7 +51,8 @@ export const proposalData = {
         imageUrl: "/wht_website_phase1.png",
         price: "R 3,000",
         quoteLabel: "Website Optimisation & Rebuild",
-        quoteUrl: "#"
+        quoteUrl: "#",
+        bgColor: "secondary"
       }
     },
     {
@@ -135,7 +136,8 @@ export const proposalData = {
         imageUrl: "/email-setup.png",
         price: "No Charge",
         quoteLabel: "Email Setup",
-        quoteUrl: "#"
+        quoteUrl: "#",
+        bgColor: "secondary"
       }
     },
     {
@@ -147,7 +149,7 @@ export const proposalData = {
         description: "Advancing the website build and establishing the data pipeline to measure success.",
         imagePosition: "left",
         imageUrl: "/wht_month2_visibility.png",
-        bgColor: "secondary"
+        bgColor: "primary"
       }
     },
     {
@@ -161,7 +163,8 @@ export const proposalData = {
         imageUrl: "/vecteezy_electrician-engineer-checking-electric-current-voltage-at_24083985.jpg",
         price: "R 3,000",
         quoteLabel: "Website Optimisation & Rebuild",
-        quoteUrl: "#"
+        quoteUrl: "#",
+        bgColor: "secondary"
       }
     },
     {
@@ -201,7 +204,7 @@ export const proposalData = {
         description: "The final push for website launch and the activation of paid search lead generation.",
         imagePosition: "left",
         imageUrl: "/wht_month3_activation.png",
-        bgColor: "secondary"
+        bgColor: "primary"
       }
     },
     {
@@ -215,7 +218,8 @@ export const proposalData = {
         imageUrl: "/vecteezy_ai-generated-close-up-detail-of-an-electrician-hands-working_37778927.jpg",
         price: "R 3,000",
         quoteLabel: "Website Optimisation & Rebuild",
-        quoteUrl: "#"
+        quoteUrl: "#",
+        bgColor: "secondary"
       }
     },
     {
@@ -267,7 +271,7 @@ export const proposalData = {
         eyebrow: "Month 4",
         title: "Ongoing Momentum",
         description: "Transitioning into sustained growth through managed lead generation and consistent brand visibility.",
-        imagePosition: "left",
+        imagePosition: "right",
         imageUrl: "/wht_month4_momentum.png",
         bgColor: "secondary"
       }
@@ -279,11 +283,12 @@ export const proposalData = {
         eyebrow: "15. Management",
         title: "Social Media",
         description: "Full management of Instagram and Facebook channels, ensuring WHT Electrical remains top-of-mind for your local audience.",
-        imagePosition: "right",
+        imagePosition: "left",
         imageUrl: "/wht_social_management.png",
         price: "R 3,500 /mo",
         quoteLabel: "Social Media (Month 4+)",
-        quoteUrl: "#"
+        quoteUrl: "#",
+        bgColor: "primary"
       }
     },
     {
@@ -293,11 +298,12 @@ export const proposalData = {
         eyebrow: "16. Performance",
         title: "Google Ads",
         description: "Ongoing optimisation of Google Ads to drive leads. Recommended adspend for this phase is +R4,000 per month.",
-        imagePosition: "left",
+        imagePosition: "right",
         imageUrl: "/wht_google_ads_performance.png",
         price: "R 4,000 /mo",
         quoteLabel: "Google Ads (Month 4+)",
-        quoteUrl: "#"
+        quoteUrl: "#",
+        bgColor: "secondary"
       }
     },
     {
@@ -307,11 +313,12 @@ export const proposalData = {
         eyebrow: "17. Scale",
         title: "Additional Projects & Future Phases",
         description: "Preparation for future expansion including Company Profiles, Email Signatures, LinkedIn setup, ongoing SEO strategies, and Mailer funnel integrations.",
-        imagePosition: "right",
+        imagePosition: "left",
         imageUrl: "/vecteezy_electrician-installs-decorative-frame-on-electric-and-tv_48569747.jpg",
         price: "Valued at R 2,000 /mo",
         quoteLabel: "Future Phases",
-        quoteUrl: "#"
+        quoteUrl: "#",
+        bgColor: "primary"
       }
     },
     {
