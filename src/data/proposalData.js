@@ -133,7 +133,7 @@ export const proposalData = {
         description: "We implement a professional email structure aligned to your domain, ensuring every interaction reflects credibility and trust. This strengthens communication with clients, reinforces your brand, and supports a more professional client experience from first contact through to project completion.",
         imagePosition: "right",
         imageUrl: "/email-setup.png",
-        price: ""No Charge",
+        price: "No Charge",
         quoteLabel: "Email Set Up",
         quoteUrl: "#"
       }
