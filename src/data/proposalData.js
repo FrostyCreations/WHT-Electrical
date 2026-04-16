@@ -62,7 +62,7 @@ export const proposalData = {
         title: "Brand Visual Guide (Everyman Archetype)",
         description: "We define WHT Electrical’s brand through the Everyman archetype, positioning the business as dependable, approachable, and built on trust. This creates a clear visual identity and tone that resonates with everyday homeowners, businesses, and property managers. The result is a brand that feels relatable, reliable, and easy to choose, strengthening connection and credibility in a competitive service market.",
         imagePosition: "left",
-        imageUrl: "/wht_new_brand_guide.png",
+        imageUrl: "/brand-archetype-wheel.png",
         price: "R 2,000",
         quoteLabel: "Visual Guide",
         quoteUrl: "#"
