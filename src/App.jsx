@@ -139,7 +139,7 @@ function App({ hideEditButton }) {
 
       <main>
         <Hero data={proposalData.hero} />
-        {proposalData.sections.map((section, index) => {
+        {proposalData.sections.filter(s => !s.data?.hideFromProposal).map((section, index) => {
           const Component = ComponentMap[section.type];
           if (!Component) return <div key={index} style={{color: 'red'}}>Component {section.type} not found.</div>;
           
