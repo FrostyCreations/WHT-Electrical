@@ -15,7 +15,7 @@ export const proposalData = {
     "badge": "4-Month Strategic Rollout",
     "title": "Establish. Activate. <br/><span style='font-weight: 300'>Generate Leads.</span>",
     "subtitle": "A structured blueprint for WHT Electrical to dominate local search, build trust through professional branding, and scale with high-intent lead generation.",
-    "heroImageUrl": "/wht-hero.png"
+    "heroImageUrl": "/wht_new_hero.png"
   },
   sections: [
     {
@@ -62,7 +62,7 @@ export const proposalData = {
         title: "Brand Visual Guide",
         description: "Defining WHT Electrical’s archetype—reliable and built on trust. This guide ensures consistent tone, color, and messaging across all digital touchpoints.",
         imagePosition: "left",
-        imageUrl: "/brand-archetype-wheel.png",
+        imageUrl: "/wht_new_brand_guide.png",
         price: "R 2,000",
         quoteLabel: "Visual Guide",
         quoteUrl: "#"
@@ -76,7 +76,7 @@ export const proposalData = {
         title: "Instagram Set Up",
         description: "Establishing a professional Instagram profile to showcase high-quality project work and build social trust with potential clients.",
         imagePosition: "right",
-        imageUrl: "/social-profile-setup.png",
+        imageUrl: "/wht_new_instagram_setup.png",
         price: "R 1,000",
         quoteLabel: "Instagram Set Up",
         quoteUrl: "#"
@@ -118,7 +118,7 @@ export const proposalData = {
         title: "Google Business Optimisation",
         description: "Claiming and refining the Google Business Profile to ensure WHT Electrical appears prominently in local 'Near Me' searches.",
         imagePosition: "left",
-        imageUrl: "/google-bing-listing.png",
+        imageUrl: "/wht_new_gmb_listing.png",
         price: "R 1,000",
         quoteLabel: "Google Business Optimisation",
         quoteUrl: "#"
@@ -172,7 +172,7 @@ export const proposalData = {
         title: "Website Tracking & Looker Studio Report",
         description: "Setting up GA4 and custom dashboards. This provides WHT Electrical with transparent, real-time reporting on where leads are coming from.",
         imagePosition: "left",
-        imageUrl: "/wht-analytics.png",
+        imageUrl: "/wht_new_tracking_dashboard.png",
         price: "R 3,000",
         quoteLabel: "Website Tracking & Looker Studio Report",
         quoteUrl: "#"
@@ -186,7 +186,7 @@ export const proposalData = {
         title: "Social Media Posting",
         description: "Activation of the managed social media schedule across Instagram and Facebook to maintain consistent brand presence.",
         imagePosition: "right",
-        imageUrl: "/social-media.jpg",
+        imageUrl: "/wht_new_social_posting.png",
         price: "R 2,000",
         quoteLabel: "Social Media Posting",
         quoteUrl: "#"
@@ -226,7 +226,7 @@ export const proposalData = {
         title: "SEO Citations",
         description: "Building authoritative local business listings and citations to strengthen Google ranking for competitive electrical search terms.",
         imagePosition: "left",
-        imageUrl: "/seo-listings-citations.png",
+        imageUrl: "/wht_new_seo_citations.png",
         price: "R 2,000",
         quoteLabel: "SEO Citations",
         quoteUrl: "#"
@@ -254,7 +254,7 @@ export const proposalData = {
         title: "Google Ads Set Up",
         description: "Configuring and launching high-intent Search campaigns targeting users actively looking for electrical services in your service areas.",
         imagePosition: "left",
-        imageUrl: "/wht-ads.png",
+        imageUrl: "/wht_new_google_ads.png",
         price: "R 2,000",
         quoteLabel: "Google Ads Set Up",
         quoteUrl: "#"
