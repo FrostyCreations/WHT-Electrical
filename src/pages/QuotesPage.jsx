@@ -115,7 +115,7 @@ const QuotesPage = () => {
 
       if (phaseId) {
         breakdown[phaseId].total += priceVal;
-        breakdown[phaseId].items.push(label);
+        breakdown[phaseId].items.push({ label, rawPrice: section.data.price });
         
         // Add to global totals if the phase is selected
         if (selectedPhases.has(phaseId)) {
@@ -182,9 +182,14 @@ const QuotesPage = () => {
                       <td>
                         <div className="section-info">
                           <span className="section-name">{phase.label}</span>
-                          <ul className="phase-sub-items">
-                            {phase.items.map(item => <li key={item}>{item}</li>)}
-                          </ul>
+                          <div className="phase-itemized-list">
+                            {phase.items.map(item => (
+                              <div key={item.label} className="itemized-row">
+                                <span className="item-label">{item.label}</span>
+                                <span className="item-price">{item.rawPrice}</span>
+                              </div>
+                            ))}
+                          </div>
                         </div>
                       </td>
                       <td className="text-right font-bold">
