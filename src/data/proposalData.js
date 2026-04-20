@@ -285,7 +285,7 @@ export const proposalData = {
         description: "Full management of Instagram and Facebook channels, ensuring WHT Electrical remains top-of-mind for your local audience.",
         imagePosition: "left",
         imageUrl: "/wht_social_management.png",
-        price: "R 3,500 /mo",
+        price: "R 2,967 /mo",
         quoteLabel: "Social Media (Month 4+)",
         quoteUrl: "#",
         bgColor: "primary"
